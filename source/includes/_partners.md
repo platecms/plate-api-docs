@@ -8,30 +8,13 @@
 {
   "data": {
     "id": 1,
-    "name": "Partner Name 1",
-    "companies": [
-      {
-        "id": 1,
-        "name": "Company Name 1",
-      },
-      {
-        "id": 2,
-        "name": "Company Name 2",
-      }
-    ]
+    "name": "Partner Name 1"
   }
 }
 
 ```
 
-This endpoint retrieves a specific partner and the companies that are in this
-partner.
-
-<aside class="warning">Only the <code>id</code> and <code>name</code> attributes
-of the companies that are in this partner are shown. Use the
-<a href="#get-all-companies">Get all companies</a>
-or <a href="#get-specific-company">Get specific company</a> endpoint to get detailed information about the companies
-</aside>
+This endpoint retrieves a specific partner.
 
 ### HTTP Request
 

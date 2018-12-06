@@ -43,23 +43,13 @@ Parameter | Description
   "data": {
     "id": 1,
     "name": "Company 1",
-    "partner_id": 1,
-    "sites": [
-      {
-        "id": 1,
-        "name": "Site Name 1",
-      },
-      {
-        "id": 2,
-        "name": "Site Name 2",
-      }
-    ]
+    "partner_id": 1
   }
 }
 
 ```
 
-This endpoint retrieves a specific company and the id's of the sites of this company.
+This endpoint retrieves a specific company.
 
 ### HTTP Request
 
@@ -94,12 +84,10 @@ Alternative endpoints are:
   "data": {
     "id": 1,
     "name": "Created Partner Name 1",
-    "partner_id": 1,
-    "sites": []
+    "partner_id": 1
   }
 }
 ```
-> Note that the `sites` attribute of a newly created company is always empty.
 
 This endpoint creates a company.
 
@@ -117,7 +105,19 @@ Parameter | Description
 
 Parameter | Description
 --------- | -----------
-name | The name of the partner to create
+name | The name for the new company
+street_name | The street name for the new company
+street_no | The street number for the new company
+street_suffix | The street suffix for the new company
+city | The city for the new company
+zipcode | The zipcode for the new company
+country | The country for the new company
+phone | The phone number for this company
+kvk_number | The [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for the new company
+vat_number | The [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for the new company
+invoice_contact_first_name | The first name for the invoice contact for the new company
+invoice_contact_last_name | The last name for the invoice contact for the new company
+invoice_contact_email | The email address for the invoice contact for the new company
 
 ### Constraints
 This endpoint has the following constraints:
@@ -141,17 +141,7 @@ This endpoint has the following constraints:
   "data": {
     "id": 1,
     "name": "New Company name",
-    "partner_id": 1,
-    "sites": [
-      {
-        "id": 1,
-        "name": "Site Name 1",
-      },
-      {
-        "id": 2,
-        "name": "Site Name 2",
-      }
-    ]
+    "partner_id": 1
   }
 }
 ```
@@ -173,12 +163,25 @@ Parameter | Description
 
 Parameter | Description
 --------- | -----------
-name | The new name for this company
+name \*| The new name for this company
+street_name \*| The new street name for this company
+street_no \*| The new street number for this company
+street_suffix \*| The new street suffix for this company
+city \*| The new city for this company
+zipcode \*| The new zipcode for this company
+country \*| The new country for this company
+phone | The phone number for this company
+kvk_number \*| The new [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for this company
+vat_number \*| The new [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for this company
+invoice_contact_first_name \*| The new first name for the invoice contact for this company
+invoice_contact_last_name \*| The new last name for the invoice contact for this company
+invoice_contact_email |\* The new email address for the invoice contact for this company
 
 ### Constraints
 This endpoint has the following constraints:
 
-* If the parameter `name` is given, it should have length > 1
+* The updated company needs to have a value for all mentioned PUT parameters with an asterik(\*). So either a
+value was already set, or a new value has to be set through this request.
 
 ### Alternative endpoints
 

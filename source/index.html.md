@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - partners
   - companies
+  - sites
   - errors
 
 search: true
@@ -25,14 +26,3 @@ documentation you will find a guide on how to use the Plate API.
 
 Plate uses API keys to authenticate your app to the API. This key can be generated
 in the Plate dashboard. # TODO: Link to dashboard, and show how to authorize
-
-
-"sites": [
-  {
-    "id": 1,
-    "name": "Site name 1",
-    "languages": "nl,en",
-    "main_language": "nl",
-    "param_key": "aea00cde61",
-  }
-]
