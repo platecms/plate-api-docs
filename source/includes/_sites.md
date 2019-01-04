@@ -9,27 +9,37 @@
   "data": [
     {
       "id": 1,
-      "company_id": 1,
-      "theme_id": 1,
-      "name": "Site name 1",
-      "languages": "nl,en",
-      "main_language": "nl",
-      "param_key": "aea00cde61",
-      "technical_contact_name": "David",
-      "technical_contact_email": "david@getplate.com",
-      "status": "creating"
+      "type": "sites",
+      "attributes" : {
+        "name": "Site name 1",
+        "languages": "nl,en",
+        "main_language": "nl",
+        "param_key": "aea00cde61",
+        "technical_contact_name": "David",
+        "technical_contact_email": "david@getplate.com",
+        "status": "creating"
+      },
+      "relations" : {
+        "company_id": 1,
+        "theme_id": 1
+      }
     },
     {
       "id": 2,
-      "company_id": 1,
-      "theme_id": 123,
-      "name": "Site name 2",
-      "languages": "nl,en,de",
-      "main_language": "nl",
-      "param_key": "aec91acccc",
-      "technical_contact_name": "Kobus",
-      "technical_contact_email": "kobus@getplate.com",
-      "status": "ready"
+      "type": "sites",
+      "attributes" : {
+        "name": "Site name 2",
+        "languages": "nl,en,de",
+        "main_language": "nl",
+        "param_key": "aec91acccc",
+        "technical_contact_name": "Kobus",
+        "technical_contact_email": "kobus@getplate.com",
+        "status": "ready"
+      },
+      "relations": {
+        "company_id": 1,
+        "theme_id": 123,
+      }
     }
   ]
 }
@@ -45,8 +55,8 @@ This endpoint retrieves all sites in a specific company.
 
 Parameter | Description
 --------- | -----------
+:company_id | The id of the company to which the sites belong
 :partner_id | The id of the partner to which the sites belong
-:company_id | The id of the partner to which the sites belong
 
 ### Alternative endpoints
 
@@ -62,15 +72,20 @@ Alternative endpoints are:
 {
   "data": {
     "id": 2,
-    "theme_id": 123,
-    "company_id": 1,
-    "name": "Site name 2",
-    "languages": "nl,en,de",
-    "main_language": "nl",
-    "param_key": "aec91acccc",
-    "technical_contact_name": "Kobus",
-    "technical_contact_email": "kobus@getplate.com",
-    "status": "ready"
+    "type": "sites",
+    "attributes" : {
+      "name": "Site name 2",
+      "languages": "nl,en,de",
+      "main_language": "nl",
+      "param_key": "aec91acccc",
+      "technical_contact_name": "Kobus",
+      "technical_contact_email": "kobus@getplate.com",
+      "status": "ready"
+    },
+    "relations" : {
+      "theme_id": 123,
+      "company_id": 1
+    }
   }
 }
 
@@ -97,7 +112,7 @@ Alternative endpoints are:
 
 ## Create site
 
-> An example of valid JSON post parameters
+> An example of valid JSON POST parameters
 
 ```json
 {
@@ -117,15 +132,20 @@ Alternative endpoints are:
 {
   "data": {
     "id": 3,
-    "theme_id": 1,
-    "company_id": 3,
-    "name": "Created site",
-    "languages": "nl,en",
-    "main_language": "en",
-    "param_key": "aec91acccc",
-    "technical_contact_name": "Pieter",
-    "technical_contact_email": "pieter@getplate.com",
-    "status": "creating"
+    "type": "sites",
+    "attributes": {
+      "name": "Created site",
+      "languages": "nl,en",
+      "main_language": "en",
+      "param_key": "aec91acccc",
+      "technical_contact_name": "Pieter",
+      "technical_contact_email": "pieter@getplate.com",
+      "status": "creating"
+    },
+    "relations": {
+      "theme_id": 1,
+      "company_id": 3,
+    }
   }
 }
 ```
@@ -158,4 +178,111 @@ initial_domain | The initial_domain of this site | Required. Has to be an url-sa
 
 ## Update site
 
+> An example of valid JSON PUT parameters
+
+```json
+{
+  "name": "New name"
+}
+```
+
+> `PUT {base_url}/companies/3/sites/3` with the above parameters returns JSON structured like this:
+
+```json
+{
+  "data": {
+    "id": 3,
+    "type": "sites",
+    "attributes": {
+      "name": "New name",
+      "languages": "nl,en",
+      "main_language": "en",
+      "param_key": "aec91acccc",
+      "technical_contact_name": "Pieter",
+      "technical_contact_email": "pieter@getplate.com",
+      "status": "ready"
+    },
+    "relations": {
+      "theme_id": 1,
+      "company_id": 3,
+    }
+  }
+}
+```
+
+This endpoint updates a site.
+
+### HTTP Request
+
+`PUT {base_url}/companies/:company_id/sites/:id`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+:company_id | The id of the company to which the site to update belongs
+:id | The id of the site to update
+
+### PUT Parameters
+
+Parameter | Description | Constraints
+--------- | ----------- | -----------
+name      | The new name of the site to update | Not null
+seo_title | The new SEO title of the site to update
+seo_description | The new SEO description of the site to update
+languages | The new languages of the site to update | Not null. Has to be comma-seperated string of [language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+main_language | The new main language of the site to update | Not null. Has to be in `languages`
+technical_contact_name | The new name of the technical contact of the site to update. |
+technical_contact_email | The new email of the technical contact of the site to update. |
+
+### Alternative endpoints
+
+Alternative endpoints are:
+
+* `PUT {base_url}/sites/:id`
+
 ## Delete site
+
+> `DELETE {base_url}/companies/1//sites/3` returns JSON structured like this:
+
+```json
+{
+  "data": {
+    "id": 3,
+    "type": "sites",
+    "attributes": {
+      "name": "New name",
+      "languages": "nl,en",
+      "main_language": "en",
+      "param_key": "aec91acccc",
+      "technical_contact_name": "Pieter",
+      "technical_contact_email": "pieter@getplate.com",
+      "status": "ready"
+    },
+    "relations": {
+      "theme_id": 1,
+      "company_id": 3,
+    }
+  }
+}
+```
+
+This endpoint deletes a specific company.
+
+### HTTP Request
+
+`DELETE {base_url}/companies/:company_id/sites/:id`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+:company_id | The id of the company to which the delete site belongs
+:id | The id of the site to delete
+
+
+### Alternative endpoints
+
+Alternative endpoints are:
+
+* `DELETE {base_url}/sites/:id`

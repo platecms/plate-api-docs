@@ -8,7 +8,11 @@
 {
   "data": {
     "id": 1,
-    "name": "Partner Name 1"
+    "type": "partners",
+    "attributes": {
+      "name": "Partner Name 1"
+    },
+    "relations": {}
   }
 }
 
@@ -28,7 +32,7 @@ Parameter | Description
 
 ## Update partner
 
-> An example of valid JSON post parameters
+> An example of valid JSON PUT parameters
 
 ```json
 {
@@ -42,7 +46,11 @@ Parameter | Description
 {
   "data": {
     "id": 1,
-    "name": "New Partner name"
+    "type": "partners",
+    "attributes": {
+      "name": "New Partner name"
+    },
+    "relations": {}
   }
 }
 ```
@@ -63,7 +71,7 @@ Parameter | Description
 
 Parameter | Description
 --------- | -----------
-name | Thenew name for this partner
+name | The new name for this partner
 
 ### Constraints
 This endpoint has the following constraints:

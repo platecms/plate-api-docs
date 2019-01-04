@@ -9,13 +9,47 @@
   "data": [
     {
       "id": 1,
-      "name": "Company Name 1",
-      "partner_id": 1
+      "type": "companies",
+      "attributes": {
+        "name": "Company Name 1",
+        "street_name": "Somestreet",
+        "street_no": "5",
+        "street_suffix": "a",
+        "city": "Ede",
+        "zipcode": "6734 AT",
+        "country": "Netherlands",
+        "phone": "+3123456789",
+        "kvk_number": "0123456789",
+        "vat_number": "9876543210",
+        "invoice_contact_first_name": "Johannes",
+        "invoice_contact_last_name": "Pleet",
+        "invoice_contact_email": "johannes@getplate.com"
+      },
+      "relations": {
+        "partner_id": 1
+      }
     },
     {
       "id": 2,
-      "name": "Company Name 2",
-      "partner_id": 1
+      "type": "companies",
+      "attributes": {
+        "name": "Company Name 2",
+        "street_name": "Somestreet",
+        "street_no": "5",
+        "street_suffix": "a",
+        "city": "Ede",
+        "zipcode": "6734 AT",
+        "country": "Netherlands",
+        "phone": "+3123456789",
+        "kvk_number": "0123456789",
+        "vat_number": "9876543210",
+        "invoice_contact_first_name": "Johannes",
+        "invoice_contact_last_name": "Pleet",
+        "invoice_contact_email": "johannes@getplate.com"
+      },
+      "relations": {
+        "partner_id": 1
+      }
     }
   ]
 }
@@ -42,8 +76,25 @@ Parameter | Description
 {
   "data": {
     "id": 1,
-    "name": "Company 1",
-    "partner_id": 1
+    "type": "companies",
+    "attributes": {
+      "name": "Company Name 1",
+      "street_name": "Somestreet",
+      "street_no": "5",
+      "street_suffix": "a",
+      "city": "Ede",
+      "zipcode": "6734 AT",
+      "country": "Netherlands",
+      "phone": "+3123456789",
+      "kvk_number": "0123456789",
+      "vat_number": "9876543210",
+      "invoice_contact_first_name": "Johannes",
+      "invoice_contact_last_name": "Pleet",
+      "invoice_contact_email": "johannes@getplate.com"
+    },
+    "relations": {
+      "partner_id": 1
+    }
   }
 }
 
@@ -69,7 +120,7 @@ Alternative endpoints are:
 
 ## Create company
 
-> An example of valid JSON post parameters
+> An example of valid JSON POST parameters
 
 ```json
 {
@@ -83,8 +134,25 @@ Alternative endpoints are:
 {
   "data": {
     "id": 1,
-    "name": "Created Partner Name 1",
-    "partner_id": 1
+    "type": "companies",
+    "attributes": {
+      "name": "Created Company Name 1",
+      "street_name": "",
+      "street_no": "",
+      "street_suffix": "",
+      "city": "",
+      "zipcode": "",
+      "country": "",
+      "phone": "",
+      "kvk_number": "",
+      "vat_number": "",
+      "invoice_contact_first_name": "",
+      "invoice_contact_last_name": "",
+      "invoice_contact_email": ""
+    },
+    "relations": {
+      "partner_id": 1
+    }
   }
 }
 ```
@@ -126,7 +194,7 @@ This endpoint has the following constraints:
 
 ## Update company
 
-> An example of valid JSON post parameters
+> An example of valid JSON PUT parameters
 
 ```json
 {
@@ -140,8 +208,25 @@ This endpoint has the following constraints:
 {
   "data": {
     "id": 1,
-    "name": "New Company name",
-    "partner_id": 1
+    "type": "companies",
+    "attributes": {
+      "name": "New Company name",
+      "street_name": "Somestreet",
+      "street_no": "5",
+      "street_suffix": "a",
+      "city": "Ede",
+      "zipcode": "6734 AT",
+      "country": "Netherlands",
+      "phone": "+3123456789",
+      "kvk_number": "0123456789",
+      "vat_number": "9876543210",
+      "invoice_contact_first_name": "Johannes",
+      "invoice_contact_last_name": "Pleet",
+      "invoice_contact_email": "johannes@getplate.com"
+    },
+    "relations": {
+      "partner_id": 1
+    }
   }
 }
 ```
@@ -161,26 +246,26 @@ Parameter | Description
 
 ### PUT Parameters
 
-Parameter | Description
---------- | -----------
-name \*| The new name for this company
-street_name \*| The new street name for this company
-street_no \*| The new street number for this company
-street_suffix \*| The new street suffix for this company
-city \*| The new city for this company
-zipcode \*| The new zipcode for this company
-country \*| The new country for this company
-phone | The phone number for this company
-kvk_number \*| The new [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for this company
-vat_number \*| The new [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for this company
-invoice_contact_first_name \*| The new first name for the invoice contact for this company
-invoice_contact_last_name \*| The new last name for the invoice contact for this company
-invoice_contact_email |\* The new email address for the invoice contact for this company
+Parameter | Description | Constraints
+--------- | ----------- | -----------
+name | The new name for this company | Required.
+street_name | The new street name for this company | Required.
+street_no | The new street number for this company | Required.
+street_suffix | The new street suffix for this company
+city | The new city for this company | Required.
+zipcode | The new zipcode for this company | Required.
+country | The new country for this company | Required.
+phone | The new phone number for this company
+kvk_number | The new [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for this company | Required.
+vat_number | The new [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for this company | Required.
+invoice_contact_first_name | The new first name for the invoice contact for this company | Required.
+invoice_contact_last_name | The new last name for the invoice contact for this company | Required.
+invoice_contact_email | The new email address for the invoice contact for this company | Required.
 
 ### Constraints
 This endpoint has the following constraints:
 
-* The updated company needs to have a value for all mentioned PUT parameters with an asterik(\*). So either a
+* The updated company needs to have a value for all required PUT parameters. So either a
 value was already set, or a new value has to be set through this request.
 
 ### Alternative endpoints

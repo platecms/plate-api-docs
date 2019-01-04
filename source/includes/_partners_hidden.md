@@ -27,7 +27,7 @@ This endpoint retrieves all partners accessible by the provided API key.
 
 ## Create partner
 
-> An example of valid JSON post parameters
+> An example of valid JSON POST parameters
 
 ```json
 {
