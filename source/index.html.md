@@ -14,6 +14,7 @@ includes:
   - partners
   - companies
   - sites
+  - themes
   - errors
 
 search: true

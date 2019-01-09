@@ -1,8 +1,8 @@
 # Connecting to the Plate API
 
 Any application can connect to the Plate API using an HTTP request with a
-certain method to an endpoints, with some parameter. The [endpoints section of
-the documentation]()#TODO: FIX LINK TO ENDPOINTS SECTION describes the details of
+certain method to an endpoint, with some parameters. The [endpoints section of
+the documentation](#) #TODO: FIX LINK TO ENDPOINTS SECTION describes the details of
 all available endpoints, such as the endpoint itself, the required HTTP method and
 the permitted/required parameters.
 

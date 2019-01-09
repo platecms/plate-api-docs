@@ -101,7 +101,7 @@ This endpoint retrieves a specific site.
 
 Parameter | Description
 --------- | -----------
-:company_id | The id of the site to retrieve
+:company_id | The id of the company of the site to retrieve
 :id | The id of the site to retrieve
 
 ### Alternative endpoints
@@ -174,7 +174,7 @@ main_language | The main language of the new site | Required. Has to be in `lang
 theme_id | The id of the theme that will be installed on the new site. | Has to correspond to an existing theme
 technical_contact_name | The name of the technical contact of the new site. |
 technical_contact_email | The email of the technical contact of the new site. |
-initial_domain | The initial_domain of this site | Required. Has to be an url-safe string.
+initial_subdomain | The initial subdomain of this site | Required. Has to be an url-safe string.
 
 ## Update site
 
@@ -234,6 +234,7 @@ languages | The new languages of the site to update | Not null. Has to be comma-
 main_language | The new main language of the site to update | Not null. Has to be in `languages`
 technical_contact_name | The new name of the technical contact of the site to update. |
 technical_contact_email | The new email of the technical contact of the site to update. |
+enable_theme_updates | Whether this site should be linked to updates of its theme | Either `true` or `false`
 
 ### Alternative endpoints
 

@@ -37,19 +37,34 @@ The following errors can be returned by Plate:
 Error Code | Meaning
 ---------- | -------
 !400 | Bad Request -- Your request is invalid.
-!401 | Unauthorized -- Your API key is wrong.
-!403 | Forbidden -- The kitten requested is hidden for administrators only.
+401 | Unauthorized -- Wrong authentication details provided
+403 | Forbidden -- Forbidden request
 404 | Not Found -- The specified resource could not be found.
 !405 | Method Not Allowed -- You tried to access a kitten with an invalid method.
 !406 | Not Acceptable -- You requested a format that isn't json.
 !410 | Gone -- The kitten requested has been removed from our servers.
 !418 | I'm a teapot.
-!422 | Unprocessable entity
+422 | Unprocessable entity
 !429 | Too Many Requests -- You're requesting too many kittens! Slow down!
 !500 | Internal Server Error -- We had a problem with our server. Try again later.
 !503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
 
+## 401 Unauthorized
+
+The provided authentication details do not match any valid integration according to the
+[authentication requirements](#authentication). Please follow these requirements with an
+activated integration key.
+
+## 403 Forbidden
+
+The request was understood, but the authenticated integration is not allowed to perform this action.
+
 ## 404 Not Found
 
-One or more resources specified in the request could not be found. The `errors`
-object in the JSON response will contain the following keys:
+One or more resources specified in the request could not be found.
+
+## 422 Unprocessable entity
+
+The request was understood and authorized, but the data provided does not match the requirements.
+For example one of the validations of a provided content field was not matched, or a required
+attribute was not given.
