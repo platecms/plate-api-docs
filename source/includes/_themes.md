@@ -18,6 +18,7 @@
       },
       "relations" : {
         "partner_id": 1,
+        "site_id": 22
       }
     },
     {
@@ -31,6 +32,7 @@
       },
       "relations" : {
         "partner_id": 1,
+        "site_id": 23
       }
     }
   ]
@@ -52,7 +54,7 @@ Parameter | Description
 
 ## Get specific Theme
 
-> `GET {base_url}/partner/1/themes/2` returns JSON structured like this:
+> `GET {base_url}/partners/1/themes/2` returns JSON structured like this:
 
 ```json
 {
@@ -66,7 +68,8 @@ Parameter | Description
       "status": "unpublished"
     },
     "relations" : {
-      "partner_id": 1
+      "partner_id": 1,
+      "site_id": 23
     }
   }
 }
@@ -77,7 +80,7 @@ This endpoint retrieves a specific Theme.
 
 ### HTTP Request
 
-`GET {base_url}/partner/:partner_id/themes/:id`
+`GET {base_url}/partners/:partner_id/themes/:id`
 
 ### Alternative endpoints
 
@@ -107,7 +110,7 @@ Parameter | Description
 }
 ```
 
-> `POST {base_url}/partner/3/themes` with the above parameters returns JSON structured like this:
+> `POST {base_url}/partners/3/themes` with the above parameters returns JSON structured like this:
 
 ```json
 {
@@ -121,7 +124,8 @@ Parameter | Description
       "status": "creating"
     },
     "relations" : {
-      "partner_id": 3
+      "partner_id": 3,
+      "site_id": 29
     }
   }
 }
@@ -131,7 +135,7 @@ This endpoint creates a theme.
 
 ### HTTP Request
 
-`POST {base_url}/partner/:partner_id/themes`
+`POST {base_url}/partners/:partner_id/themes`
 
 ### URL Parameters
 
@@ -174,7 +178,8 @@ initial_domain | The subdomain where this theme will be visible | Required. Has 
       "status": "creating"
     },
     "relations" : {
-      "partner_id": 3
+      "partner_id": 3,
+      "site_id": 29
     }
   }
 }
@@ -184,7 +189,7 @@ This endpoint updates a theme.
 
 ### HTTP Request
 
-`PUT {base_url}/partner/:partner_id/themes/:id`
+`PUT {base_url}/partners/:partner_id/themes/:id`
 
 ### Alternative endpoints
 
@@ -225,7 +230,8 @@ main_language | The new main language of the theme | Has to be in `languages`
       "status": "creating"
     },
     "relations" : {
-      "partner_id": 3
+      "partner_id": 3,
+      "site_id": 29
     }
   }
 }
@@ -235,7 +241,7 @@ This endpoint deletes a specific theme.
 
 ### HTTP Request
 
-`DELETE {base_url}/partner/:partner_id/themes/:id`
+`DELETE {base_url}/partners/:partner_id/themes/:id`
 
 ### Alternative endpoints
 

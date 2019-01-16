@@ -17,7 +17,8 @@
         "param_key": "aea00cde61",
         "technical_contact_name": "David",
         "technical_contact_email": "david@getplate.com",
-        "status": "creating"
+        "status": "creating",
+        "is_theme_base_site": false
       },
       "relations" : {
         "company_id": 1,
@@ -34,7 +35,8 @@
         "param_key": "aec91acccc",
         "technical_contact_name": "Kobus",
         "technical_contact_email": "kobus@getplate.com",
-        "status": "ready"
+        "status": "ready",
+        "is_theme_base_site": false
       },
       "relations": {
         "company_id": 1,
@@ -80,7 +82,8 @@ Alternative endpoints are:
       "param_key": "aec91acccc",
       "technical_contact_name": "Kobus",
       "technical_contact_email": "kobus@getplate.com",
-      "status": "ready"
+      "status": "ready",
+      "is_theme_base_site": false
     },
     "relations" : {
       "theme_id": 123,
@@ -140,7 +143,8 @@ Alternative endpoints are:
       "param_key": "aec91acccc",
       "technical_contact_name": "Pieter",
       "technical_contact_email": "pieter@getplate.com",
-      "status": "creating"
+      "status": "creating",
+      "is_theme_base_site": false
     },
     "relations": {
       "theme_id": 1,
@@ -200,7 +204,8 @@ initial_subdomain | The initial subdomain of this site | Required. Has to be an 
       "param_key": "aec91acccc",
       "technical_contact_name": "Pieter",
       "technical_contact_email": "pieter@getplate.com",
-      "status": "ready"
+      "status": "ready",
+      "is_theme_base_site": false
     },
     "relations": {
       "theme_id": 1,
@@ -244,7 +249,7 @@ Alternative endpoints are:
 
 ## Delete site
 
-> `DELETE {base_url}/companies/1//sites/3` returns JSON structured like this:
+> `DELETE {base_url}/companies/1/sites/3` returns JSON structured like this:
 
 ```json
 {
@@ -258,7 +263,8 @@ Alternative endpoints are:
       "param_key": "aec91acccc",
       "technical_contact_name": "Pieter",
       "technical_contact_email": "pieter@getplate.com",
-      "status": "ready"
+      "status": "ready",
+      "is_theme_base_site": false
     },
     "relations": {
       "theme_id": 1,

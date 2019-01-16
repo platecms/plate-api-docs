@@ -70,6 +70,12 @@ paginate_amount=10&paginate_page=2
 Sun, 06 Nov 1994 08:49:37 GMT
 ```
 
+> The valid Authorization header given the above string to sign is
+
+```
+Authorization hmac mypublickey:FOjhvBsNceYeVNAJtneSLUeYbNO133Gj1sx+aEu7I8A2ixH3VyYpc6PtxGDGVzpG1EPrDaL7sgurV2Q0+8BHDQ==
+```
+
 The string to sign consists of the following parts:
 
 * `{http_method}`: The HTTP method of the request, e.g. `GET` or `POST`.

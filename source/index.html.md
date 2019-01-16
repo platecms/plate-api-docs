@@ -15,6 +15,8 @@ includes:
   - companies
   - sites
   - themes
+  - theme_files
+  - site_translations
   - errors
 
 search: true
