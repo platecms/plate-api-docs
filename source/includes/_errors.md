@@ -7,7 +7,7 @@
   "errors": [
     {
       "id": 1,
-      "resource_rtpe": "partner",
+      "resource_type": "partner",
       "status": "404",
       "code": "not-found",
       "title": "Partner not found",

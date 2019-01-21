@@ -17,6 +17,8 @@ includes:
   - themes
   - theme_files
   - site_translations
+  - attachment_folders
+  - attachments
   - errors
 
 search: true
