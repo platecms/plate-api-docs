@@ -45,7 +45,7 @@ Error Code | Meaning
 !410 | Gone -- The kitten requested has been removed from our servers.
 !418 | I'm a teapot.
 422 | Unprocessable entity
-!429 | Too Many Requests -- You're requesting too many kittens! Slow down!
+429 | Too Many Requests -- You're requesting too many requests.
 !500 | Internal Server Error -- We had a problem with our server. Try again later.
 !503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
 
@@ -68,3 +68,7 @@ One or more resources specified in the request could not be found.
 The request was understood and authorized, but the data provided does not match the requirements.
 For example one of the validations of a provided content field was not matched, or a required
 attribute was not given.
+
+## 429 Too Many Requests
+
+The server received too many requests, please slow down the rate of requests.
