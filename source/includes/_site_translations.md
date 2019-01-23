@@ -124,7 +124,7 @@ Alternative endpoints are:
 
 * `GET {base_url}/site_translations/:id`
 
-## Update site translations
+## Update site translation
 
 > An example of valid JSON PUT parameters
 
@@ -179,7 +179,7 @@ Alternative endpoints are:
 }
 ```
 
-This endpoint updates a site.
+This endpoint updates a site translation.
 
 ### HTTP Request
 

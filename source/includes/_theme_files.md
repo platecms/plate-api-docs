@@ -1,11 +1,5 @@
 # Theme files
 
-<aside class="notice">
-In Plate, both sites and themes have theme files, hence every endpoint is available
-scoped by a site and scoped by a theme. This also causes the <code>relations</code> object in the
-JSON representation to have either a <code>site_id</code> or a <code>theme_id</code> key.
-</aside>
-
 ## Get all theme files
 
 > `GET {base_url}/sites/1/theme_files/` returns JSON structured like this:
@@ -49,40 +43,25 @@ This endpoint retrieves all theme files for a specific site
 
 `GET {base_url}/sites/:site_id/theme_files`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `GET {base_url}/themes/:theme_id/theme_files`
-
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the theme files belong
-:theme_id | The id of the theme to which the theme files belong
 
 ## Download all theme files
 
-This endpoint returns all theme files of a specific theme or site packed together in a zip file.
+This endpoint returns all theme files of a specific site packed together in a zip file.
 
 ### HTTP Request
 
 `GET {base_url}/sites/:site_id/theme_files/download`
-
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `GET {base_url}/themes/:theme_id/theme_files/download`
-
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the theme files to download
-:theme_id | The id of the site of the theme files to download
 
 
 ## Get specific theme file
@@ -115,19 +94,11 @@ content of the theme file
 
 `GET {base_url}/sites/:site_id/theme_files/:id`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `GET {base_url}/themes/:theme_id/theme_files/:id`
-
-
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the theme_file to retrieve
-:theme_id | The id of the site of the theme_file to retrieve
 :id | The id of the theme_file to retrieve
 
 ## Download specific theme file
@@ -138,19 +109,12 @@ This endpoint returns a specific theme file as a file.
 
 `GET {base_url}/sites/:site_id/theme_files/:id/download`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `GET {base_url}/themes/:theme_id/theme_files/:id/download`
-
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the theme_file to download
-:theme_id | The id of the site of the theme_file to download
 :id | The id of the theme_file to download
 
 
@@ -215,7 +179,6 @@ principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the new theme_file belongs
-:theme_id | The id of the theme to which the new theme_file belongs
 
 ### POST Parameters
 
@@ -262,19 +225,11 @@ This endpoint updates a theme file.
 
 `PUT {base_url}/sites/:site_id/theme_files/:id`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `PUT {base_url}/themes/:theme_id/theme_files/:id`
-
-
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the theme file to update belongs
-:theme_id | The id of the theme to which the theme file to update belongs
 :id | The id of the theme file to update
 
 ### PUT Parameters
@@ -313,16 +268,9 @@ This endpoint deletes a specific theme file.
 
 `DELETE {base_url}/sites/:site_id/theme_files/:id`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `DELETE {base_url}/themes/:theme_id/theme_files/:id`
-
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the theme file to update belongs
-:theme_id | The id of the theme to which the theme file to update belongs
 :id | The id of the theme file to update

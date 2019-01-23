@@ -1,6 +1,6 @@
 # Attachment
 
-## Get all attachment
+## Get all attachments
 
 > `GET {base_url}/sites/1/attachments/` returns JSON structured like this:
 
@@ -136,10 +136,6 @@ Content-Disposition: form-data; name="title"
 
 A title describing this attachment
 --arandomuniquestring098123
-Content-Disposition: form-data; name="attachment_folder_id"
-
-4
---arandomuniquestring098123
 Content-Disposition: form-data; name="file" filename="plate.png"
 Content-Type: image/png
 
@@ -198,7 +194,6 @@ Parameter | Description
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 title      | The title of the new attachment | Not null.
-attachment_folder_id | The id of the attachment folder to which the new attachment belongs | Id of an existing attachment folder.
 file      | The new attachment.  | Required
 
 ### Alternative endpoints

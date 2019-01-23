@@ -16,9 +16,10 @@ includes:
   - sites
   - themes
   - theme_files
-  - site_translations
   - attachment_folders
   - attachments
+  - site_translations
+  - posts
   - errors
 
 search: true
