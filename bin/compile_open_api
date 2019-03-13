@@ -1,0 +1,10 @@
+#!/bin/sh
+widdershins \
+  --search false \
+  --language_tabs 'json:JSON' \
+  --summary oas/open_api_specs/endpoints.yaml \
+  -o source/includes/_specs.md \
+  --verbose \
+  --resolve \
+  --expandBody=false \
+  # -u oas/widdershins_templates/

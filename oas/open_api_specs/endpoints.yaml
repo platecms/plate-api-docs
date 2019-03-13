@@ -1,0 +1,67 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Plate REST API
+  description: The API to connect with Plate and automate Plate.
+  termsOfService: http://www.startwithplate.com
+  contact:
+    name: Plate
+    email: dev@getplate.com
+    url: http://www.startwithplate.com
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: https://www.startwithplate.com/api/v2
+paths:
+  /redirects:
+    summary: Redirects
+    post:
+      description: Create a new redirect
+      requestBody:
+        description: The parameters for the new redirect
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewPet"
+      responses:
+        "200":
+          description: Created a redirect.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Redirect"
+  /sites:
+    get:
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+
+
+components:
+  schemas:
+    NewPet:
+      required:
+      - from_url
+      properties:
+        from_url:
+          description: The path of the url which is redirected.
+          type: string
+    Redirect:
+      type: object
+      required:
+      - from_url
+      properties:
+        from_url:
+          type: string

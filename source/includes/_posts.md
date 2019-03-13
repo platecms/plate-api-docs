@@ -111,6 +111,7 @@ Alternative endpoints are:
 
 ```json
 {
+  "content_type_id": 14,
   "title": "Created Post",
 }
 ```
@@ -153,7 +154,11 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-title     | The title of the post | Required. Not null
+content_type_id | The content type of the new post | Required
+title     | The title of the new post | Required
+language  | The language of the new post | Required. Has to be one of the languages of the site of the new post. 
+seo_title | The SEO title of the new post |
+seo_description | The SEO description of the new post |
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
 ## Update post

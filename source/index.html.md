@@ -20,6 +20,9 @@ includes:
   - attachments
   - site_translations
   - posts
+  - sections
+  - rows
+  - columns
   - errors
 
 search: true
