@@ -103,7 +103,7 @@ Parameter | Description
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/posts/:id`
-* `GET {base_url}/posts/:id`
+* `GET {base_url}/site_translations/:site_translation_id/posts/:i2d`
 
 ## Create post
 
@@ -111,8 +111,10 @@ Alternative endpoints are:
 
 ```json
 {
-  "content_type_id": 14,
-  "title": "Created Post",
+  "data": {    
+    "content_type_id": 14,
+    "title": "Created Post",
+  }
 }
 ```
 
@@ -156,7 +158,7 @@ Parameter | Description | Constraints
 --------- | ----------- | -----------
 content_type_id | The content type of the new post | Required
 title     | The title of the new post | Required
-language  | The language of the new post | Required. Has to be one of the languages of the site of the new post. 
+language  | The language of the new post | Required. Has to be one of the languages of the site of the new post.
 seo_title | The SEO title of the new post |
 seo_description | The SEO description of the new post |
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
@@ -167,7 +169,9 @@ seo_description | The SEO description of the new post |
 
 ```json
 {
-  "title": "An updated post title",
+  "data": {    
+    "title": "An updated post title",
+  }
 }
 ```
 
@@ -219,7 +223,7 @@ title     | The title of the post | Not null
 Alternative endpoints are:
 
 * `PUT {base_url}/sites/:site_id/posts/:id`
-* `PUT {base_url}/posts/:id`
+* `PUT {base_url}/site_translations/:site_translation_id/posts/:i2d`
 
 ## Delete post
 
@@ -264,4 +268,4 @@ Parameter | Description
 Alternative endpoints are:
 
 * `DELETE {base_url}/sites/:site_id/posts/:id`
-* `DELETE {base_url}/posts/:id`
+* `DELETE {base_url}/site_translations/:site_translation_id/posts/:i2d`

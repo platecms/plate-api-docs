@@ -90,7 +90,7 @@ This endpoint retrieves a specific section.
 
 ### HTTP Request
 
-`GET {base_url}/posts/:post_id/sections/:id`
+`GET {base_url}/sections/:id`
 
 ### URL Parameters
 
@@ -107,7 +107,7 @@ Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/sections/:id`
 * `GET {base_url}/site_translations/:site_translation_id/sections/:id`
-* `GET {base_url}/sections/:id`
+* `GET {base_url}/posts/:post_id/sections/:id`
 
 ## Create section
 
@@ -115,9 +115,11 @@ Alternative endpoints are:
 
 ```json
 {
-  "content_type_id": 14,
-  "name": "Created Section",
-  "position": 1
+  "data": {    
+    "content_type_id": 14,
+    "name": "Created Section",
+    "position": 1
+  }
 }
 ```
 
@@ -170,8 +172,10 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 ```json
 {
-  "name": "Updated Section Name",
-  "position": 3
+  "data": {    
+    "name": "Updated Section Name",
+    "position": 3
+  }
 }
 ```
 
@@ -201,7 +205,7 @@ This endpoint updates a section.
 
 ### HTTP Request
 
-`PUT {base_url}/posts/:post_id/sections/:id`
+`PUT {base_url}/sections/:id`
 
 ### URL Parameters
 
@@ -226,7 +230,7 @@ Alternative endpoints are:
 
 * `PUT {base_url}/sites/:site_id/sections/:id`
 * `PUT {base_url}/site_translations/:site_translation_id/sections/:id`
-* `PUT {base_url}/sections/:id`
+* `PUT {base_url}/posts/:post_id/sections/:id`
 
 ## Delete section
 
@@ -256,7 +260,7 @@ This endpoint deletes a specific section.
 
 ### HTTP Request
 
-`DELETE {base_url}/posts/:post_id/sections/:id`
+`DELETE {base_url}/sections/:id`
 
 ### URL Parameters
 
@@ -273,4 +277,4 @@ Alternative endpoints are:
 
 * `DELETE {base_url}/sites/:site_id/sections/:id`
 * `DELETE {base_url}/site_translations/:site_translation_id/sections/:id`
-* `DELETE {base_url}/sections/:id`
+* `DELETE {base_url}/posts/:post_id/sections/:id`

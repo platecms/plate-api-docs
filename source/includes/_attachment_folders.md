@@ -67,7 +67,7 @@ This endpoint retrieves a specific attachment folder.
 
 ### HTTP Request
 
-`GET {base_url}/sites/:site_id/attachment_folders/:id`
+`GET {base_url}/attachment_folders/:id`
 
 ### URL Parameters
 
@@ -80,7 +80,7 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `GET {base_url}/attachment_folders/:id`
+* `GET {base_url}/sites/:site_id/attachment_folders/:id`
 
 ## Create attachment folder
 
@@ -88,7 +88,9 @@ Alternative endpoints are:
 
 ```json
 {
-  "name": "Created Folder",
+  "data": {    
+    "name": "Created Folder",
+  }
 }
 ```
 
@@ -133,7 +135,9 @@ Parameter | Description | Constraints
 
 ```json
 {
-  "name": "A new foldername"
+  "data": {    
+    "name": "A new foldername"
+  }
 }
 ```
 
@@ -158,7 +162,7 @@ This endpoint updates a site.
 
 ### HTTP Request
 
-`PUT {base_url}/sites/:site_id/attachment_folders/:id`
+`PUT {base_url}/attachment_folders/:id`
 
 ### URL Parameters
 
@@ -177,7 +181,7 @@ Parameter | Description | Constraints
 
 Alternative endpoints are:
 
-* `PUT {base_url}/attachment_folders/:id`
+* `PUT {base_url}/sites/:site_id/attachment_folders/:id`
 
 ## Delete attachment folder
 
@@ -202,7 +206,7 @@ This endpoint deletes a specific attachment folder.
 
 ### HTTP Request
 
-`DELETE {base_url}/sites/:site_id/attachment_folders/:id`
+`DELETE {base_url}/attachment_folders/:id`
 
 ### URL Parameters
 
@@ -215,4 +219,4 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `DELETE {base_url}/attachment_folders/:id`
+* `DELETE {base_url}/sites/:site_id/attachment_folders/:id`

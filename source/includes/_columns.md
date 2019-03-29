@@ -79,7 +79,7 @@ This endpoint retrieves a specific column.
 
 ### HTTP Request
 
-`GET {base_url}/rows/:row_id/columns/:id`
+`GET {base_url}/columns/:id`
 
 ### URL Parameters
 
@@ -100,7 +100,6 @@ Alternative endpoints are:
 * `GET {base_url}/site_translations/:site_translation_id/columns/:id`
 * `GET {base_url}/posts/:post_id/columns/:id`
 * `GET {base_url}/sections/:section_id/columns/:id`
-* `GET {base_url}/columns/:id`
 
 ## Create column
 
@@ -108,7 +107,9 @@ Alternative endpoints are:
 
 ```json
 {
-  "position": 1
+  "data": {    
+    "position": 1
+  }
 }
 ```
 
@@ -153,7 +154,9 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 ```json
 {
-  "position": 3
+  "data": {    
+    "position": 3
+  }
 }
 ```
 
@@ -178,13 +181,13 @@ This endpoint updates a column.
 
 ### HTTP Request
 
-`PUT {base_url}/rows/:row_id/columns/:id`
+`PUT {base_url}/columns/:id`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-:row_id | The id of the rows of the column to update
+:row_id | The id of the row of the columns to update
 :id | The id of the column to update
 :site_id | The id of the site of the column to update
 :site_translation_id | The id of the site translation of the column to update
@@ -205,7 +208,74 @@ Alternative endpoints are:
 * `PUT {base_url}/site_translations/:site_translation_id/columns/:id`
 * `PUT {base_url}/posts/:post_id/columns/:id`
 * `PUT {base_url}/sections/:section_id/columns/:id`
-* `PUT {base_url}/columns/:id`
+* `PUT {base_url}/rows/:row_id/columns/:id`
+
+## Update column grid
+
+> An example of valid JSON PUT parameters
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "grid": 9
+    },
+    {
+      "id": 2,
+      "grid": 3
+    }
+  ]
+}
+```
+
+> `PUT {base_url}/rows/1/columns/` with the above parameters returns JSON structured like this:
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "type": "columns",
+      "attributes" : {
+        "position": 1
+      },
+      "relations" : {
+        "row_id": 1
+      }
+    },
+    {
+      "id": 4,
+      "type": "columns",
+      "attributes" : {
+        "position": 2
+      },
+      "relations" : {
+        "row_id": 1
+      }
+    }
+  ]
+}
+```
+
+This endpoint updates the grid of columns in a row. It requires an array with objects containing the id of a column, and the (new) non-zero grid of that column. The sum of all the specified grids has to be 12, and all column ids should be present.
+
+### HTTP Request
+
+`PUT {base_url}/rows/:row_id/columns/`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+:row_id | The id of the row of the columns to update
+
+### PUT Parameters
+
+Parameter | Description | Constraints
+--------- | ----------- | -----------
+id | The id of a column |
+grid | The grid of a column | At least 1. Not null. The grids should sum up to 12.
 
 ## Delete column
 
@@ -230,7 +300,7 @@ This endpoint deletes a specific column.
 
 ### HTTP Request
 
-`DELETE {base_url}/rows/:row_id/columns/:id`
+`DELETE {base_url}/columns/:id`
 
 ### URL Parameters
 
@@ -251,4 +321,4 @@ Alternative endpoints are:
 * `DELETE {base_url}/site_translations/:site_translation_id/columns/:id`
 * `DELETE {base_url}/posts/:post_id/columns/:id`
 * `DELETE {base_url}/sections/:section_id/columns/:id`
-* `DELETE {base_url}/columns/:id`
+* `DELETE {base_url}/rows/:row_id/columns/:id`

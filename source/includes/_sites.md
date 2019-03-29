@@ -98,7 +98,7 @@ This endpoint retrieves a specific site.
 
 ### HTTP Request
 
-`GET {base_url}/companies/:company_id/sites/:id`
+`GET {base_url}/sites/:id`
 
 ### URL Parameters
 
@@ -111,7 +111,7 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `GET {base_url}/sites/:id`
+* `GET {base_url}/companies/:company_id/sites/:id`
 
 ## Create site
 
@@ -119,13 +119,15 @@ Alternative endpoints are:
 
 ```json
 {
-  "name": "Created site",
-  "theme_id": 1,
-  "languages": "nl,en",
-  "main_language": "en",
-  "technical_contact_name": "Pieter",
-  "technical_contact_email": "pieter@getplate.com",
-  "initial_domain": "my-created-site"
+  "data": {    
+    "name": "Created site",
+    "theme_id": 1,
+    "languages": "nl,en",
+    "main_language": "en",
+    "technical_contact_name": "Pieter",
+    "technical_contact_email": "pieter@getplate.com",
+    "initial_domain": "my-created-site"
+  }
 }
 ```
 
@@ -186,7 +188,9 @@ initial_subdomain | The initial subdomain of this site | Required. Has to be an 
 
 ```json
 {
-  "name": "New name"
+  "data": {    
+    "name": "New name"
+  }
 }
 ```
 
@@ -219,7 +223,7 @@ This endpoint updates a site.
 
 ### HTTP Request
 
-`PUT {base_url}/companies/:company_id/sites/:id`
+`PUT {base_url}/sites/:id`
 
 ### URL Parameters
 
@@ -245,7 +249,7 @@ enable_theme_updates | Whether this site should be linked to updates of its them
 
 Alternative endpoints are:
 
-* `PUT {base_url}/sites/:id`
+* `PUT {base_url}/companies/:company_id/sites/:id`
 
 ## Delete site
 
@@ -278,7 +282,7 @@ This endpoint deletes a specific company.
 
 ### HTTP Request
 
-`DELETE {base_url}/companies/:company_id/sites/:id`
+`DELETE {base_url}/sites/:id`
 
 ### URL Parameters
 
@@ -292,4 +296,4 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `DELETE {base_url}/sites/:id`
+* `DELETE {base_url}/companies/:company_id/sites/:id`

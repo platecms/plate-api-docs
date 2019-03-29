@@ -102,11 +102,13 @@ Parameter | Description
 
 ```json
 {
-  "name": "Created theme",
-  "copy_from_theme_id": 1,
-  "languages": "nl,de",
-  "main_language": "de",
-  "initial_domain": "my-created-theme-example-site"
+  "data": {    
+    "name": "Created theme",
+    "copy_from_theme_id": 1,
+    "languages": "nl,de",
+    "main_language": "de",
+    "initial_domain": "my-created-theme-example-site"
+  }
 }
 ```
 
@@ -160,7 +162,9 @@ initial_domain | The subdomain where this theme will be visible | Required. Has 
 
 ```json
 {
-  "name": "New name"
+  "data": {    
+    "name": "New name"
+  }
 }
 ```
 
@@ -189,13 +193,7 @@ This endpoint updates a theme.
 
 ### HTTP Request
 
-`PUT {base_url}/partners/:partner_id/themes/:id`
-
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `PUT {base_url}/themes/:id`
+`PUT {base_url}/themes/:id`
 
 
 ### URL Parameters
@@ -212,6 +210,13 @@ Parameter | Description | Constraints
 name      | The new name of the theme |
 languages | The new languages of the theme | Has to be comma-seperated string of [language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 main_language | The new main language of the theme | Has to be in `languages`
+
+
+### Alternative endpoints
+
+Alternative endpoints are:
+
+* `PUT {base_url}/partners/:partner_id/themes/:id`
 
 
 ## Delete theme
@@ -241,13 +246,8 @@ This endpoint deletes a specific theme.
 
 ### HTTP Request
 
-`DELETE {base_url}/partners/:partner_id/themes/:id`
+`DELETE {base_url}/themes/:id`
 
-### Alternative endpoints
-
-Alternative endpoints are:
-
-* `DELETE {base_url}/themes/:id`
 
 ### URL Parameters
 
@@ -255,3 +255,9 @@ Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the theme to delete belongs
 :id | The id of the theme to delete
+
+### Alternative endpoints
+
+Alternative endpoints are:
+
+* `DELETE {base_url}/partners/:partner_id/themes/:id`

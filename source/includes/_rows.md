@@ -77,7 +77,7 @@ This endpoint retrieves a specific row.
 
 ### HTTP Request
 
-`GET {base_url}/sections/:section_id/rows/:id`
+`GET {base_url}/rows/:id`
 
 ### URL Parameters
 
@@ -96,7 +96,7 @@ Alternative endpoints are:
 * `GET {base_url}/sites/:site_id/rows/:id`
 * `GET {base_url}/site_translations/:site_translation_id/rows/:id`
 * `GET {base_url}/posts/:post_id/rows/:id`
-* `GET {base_url}/rows/:id`
+* `GET {base_url}/sections/:section_id/rows/:id`
 
 ## Create row
 
@@ -104,7 +104,9 @@ Alternative endpoints are:
 
 ```json
 {
-  "position": 1
+  "data": {    
+    "position": 1
+  }
 }
 ```
 
@@ -149,7 +151,9 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 ```json
 {
-  "position": 3
+  "data": {    
+    "position": 3
+  }
 }
 ```
 
@@ -174,7 +178,7 @@ This endpoint updates a row.
 
 ### HTTP Request
 
-`PUT {base_url}/sections/:section_id/rows/:id`
+`PUT {base_url}/rows/:id`
 
 ### URL Parameters
 
@@ -199,7 +203,7 @@ Alternative endpoints are:
 * `PUT {base_url}/sites/:site_id/rows/:id`
 * `PUT {base_url}/site_translations/:site_translation_id/rows/:id`
 * `PUT {base_url}/posts/:post_id/rows/:id`
-* `PUT {base_url}/rows/:id`
+* `PUT {base_url}/sections/:section_id/rows/:id`
 
 ## Delete row
 
@@ -224,7 +228,7 @@ This endpoint deletes a specific row.
 
 ### HTTP Request
 
-`DELETE {base_url}/sections/:section_id/rows/:id`
+`DELETE {base_url}/rows/:id`
 
 ### URL Parameters
 
@@ -243,4 +247,4 @@ Alternative endpoints are:
 * `DELETE {base_url}/sites/:site_id/rows/:id`
 * `DELETE {base_url}/site_translations/:site_translation_id/rows/:id`
 * `DELETE {base_url}/posts/:post_id/rows/:id`
-* `DELETE {base_url}/rows/:id`
+* `DELETE {base_url}/sections/:section_id/rows/:id`

@@ -194,8 +194,10 @@ file      | The new theme file.  | Required
 
 ```json
 {
-  "path": "pages"
-  "file_name": "_sidebar"
+  "data": {    
+    "path": "pages"
+    "file_name": "_sidebar"
+  }
 }
 ```
 

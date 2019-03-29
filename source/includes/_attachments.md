@@ -83,7 +83,7 @@ This endpoint retrieves information about a specific attachment, but does not re
 
 ### HTTP Request
 
-`GET {base_url}/sites/:site_id/attachments/:id`
+`GET {base_url}/attachments/:id`
 
 ### URL Parameters
 
@@ -97,7 +97,7 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `GET {base_url}/attachments/:id`
+* `GET {base_url}/sites/:site_id/attachments/:id`
 * `GET {base_url}/attachment_folders/:attachment_folder_id/attachments/:id`
 
 
@@ -107,13 +107,13 @@ This endpoint returns a specific attachment as a file.
 
 ### HTTP Request
 
-`GET {base_url}/sites/:site_id/attachments/:id/download`
+`GET {base_url}/attachments/:id/download`
 
 ### Alternative endpoints
 
 Alternative endpoints are:
 
-* `GET {base_url}/attachments/:id/download`
+* `GET {base_url}/sites/:site_id/attachments/:id/download`
 * `GET {base_url}/attachment_folders/:attachment_folder_id/attachments/:id/download`
 
 
@@ -209,7 +209,9 @@ Alternative endpoints are:
 
 ```json
 {
-  "title": "A new attachment_title"
+  "data": {    
+    "title": "A new attachment_title"
+  }
 }
 ```
 
@@ -237,7 +239,7 @@ This endpoint updates a site.
 
 ### HTTP Request
 
-`PUT {base_url}/sites/:site_id/attachments/:id`
+`PUT {base_url}/attachments/:id`
 
 ### URL Parameters
 
@@ -259,7 +261,7 @@ attachment_folder_id | The id of the attachment folder to which the updated atta
 Alternative endpoints are:
 
 * `PUT {base_url}/attachment_folders/:attachment_folder_id/attachments/:id`
-* `PUT {base_url}/attachments/:id`
+* `PUT {base_url}/sites/:site_id/attachments/:id`
 
 ## Delete attachment
 
@@ -287,7 +289,7 @@ This endpoint deletes a specific attachment.
 
 ### HTTP Request
 
-`DELETE {base_url}/sites/:site_id/attachments/:id`
+`DELETE {base_url}/attachments/:id`
 
 ### URL Parameters
 
@@ -302,4 +304,4 @@ Parameter | Description
 Alternative endpoints are:
 
 * `DELETE {base_url}/attachment_folders/:attachment_folder_id/attachments/:id`
-* `DELETE {base_url}/attachments/:id`
+* `DELETE {base_url}/sites/:site_id/attachments/:id`

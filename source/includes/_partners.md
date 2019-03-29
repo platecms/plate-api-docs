@@ -36,7 +36,9 @@ Parameter | Description
 
 ```json
 {
-  "name": "New Partner name"
+  "data": {    
+    "name": "New Partner name"
+  }
 }
 ```
 

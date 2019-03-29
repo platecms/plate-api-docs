@@ -109,7 +109,7 @@ This endpoint retrieves a specific site translation.
 
 ### HTTP Request
 
-`GET {base_url}/sites/:site_id/site_translations/:id`
+`GET {base_url}/site_translations/:id`
 
 ### URL Parameters
 
@@ -122,7 +122,7 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `GET {base_url}/site_translations/:id`
+* `GET {base_url}/sites/:site_id/site_translations/:id`
 
 ## Update site translation
 
@@ -130,21 +130,23 @@ Alternative endpoints are:
 
 ```json
 {
-  "content_field_1": [
-    {
-      "id": 22,
-    },
-    {
-      "id": 24,
-      "reference_content_field_1": "Updated text for existing content_reference"
-    },
-    {
-      "reference_content_field_1": "I am a referenced element",
-      "reference_content_field_2": "Some text",
+  "data": {    
+    "content_field_1": [
+      {
+        "id": 22,
+      },
+      {
+        "id": 24,
+        "reference_content_field_1": "Updated text for existing content_reference"
+      },
+      {
+        "reference_content_field_1": "I am a referenced element",
+        "reference_content_field_2": "Some text",
 
-    }
-  ],
-  "content_field_2": "New text"
+      }
+    ],
+    "content_field_2": "New text"
+  }
 }
 ```
 
@@ -183,7 +185,7 @@ This endpoint updates a site translation.
 
 ### HTTP Request
 
-`PUT {base_url}/sites/:site_id/site_translations/:id`
+`PUT {base_url}/site_translations/:id`
 
 ### URL Parameters
 
@@ -202,4 +204,4 @@ Parameter | Description | Constraints
 
 Alternative endpoints are:
 
-* `PUT {base_url}/site_translations/:id`
+* `PUT {base_url}/sites/:site_id/site_translations/:id`

@@ -104,7 +104,7 @@ This endpoint retrieves a specific company.
 
 ### HTTP Request
 
-`GET {base_url}/partners/:partner_id/companies/:id`
+`GET {base_url}/companies/:id`
 
 ### URL Parameters
 
@@ -116,7 +116,7 @@ Parameter | Description
 
 Alternative endpoints are:
 
-* `GET {base_url}/companies/:id`
+* `GET {base_url}/partners/:partner_id/companies/:id`
 
 ## Create company
 
@@ -124,7 +124,9 @@ Alternative endpoints are:
 
 ```json
 {
-  "name": "Created Company Name 1",
+  "data": {    
+    "name": "Created Company Name 1",
+  }
 }
 ```
 
@@ -198,7 +200,9 @@ This endpoint has the following constraints:
 
 ```json
 {
-  "name": "New Company name"
+  "data": {    
+    "name": "New Company name"
+  }
 }
 ```
 
@@ -235,7 +239,7 @@ This endpoint updates a specific company.
 
 ### HTTP Request
 
-`PUT {base_url}/partners/:partner_id/companies/:id`
+`PUT {base_url}/companies/:id`
 
 ### URL Parameters
 
@@ -272,7 +276,7 @@ value was already set, or a new value has to be set through this request.
 
 Alternative endpoints are:
 
-* `PUT {base_url}/companies/:id`
+* `PUT {base_url}/partners/:partner_id/companies/:id`
 
 
 ## Delete company
@@ -292,7 +296,7 @@ This endpoint deletes a specific company.
 
 ### HTTP Request
 
-`DELETE {base_url}/partners/:partner_id/companies/:id`
+`DELETE {base_url}/companies/:id`
 
 ### URL Parameters
 
@@ -310,4 +314,4 @@ This endpoint has the following constraints:
 
 Alternative endpoints are:
 
-* `DELETE {base_url}/companies/:id`
+* `DELETE {base_url}/partners/:partner_id/companies/:id`

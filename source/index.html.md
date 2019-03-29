@@ -23,6 +23,8 @@ includes:
   - sections
   - rows
   - columns
+  - elements
+  - redirects
   - errors
 
 search: true
