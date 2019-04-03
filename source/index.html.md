@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - connecting_to_plate
   - authentication
+  - pagination
   - partners
   - companies
   - sites

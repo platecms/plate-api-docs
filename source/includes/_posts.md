@@ -88,7 +88,7 @@ This endpoint retrieves a specific post.
 
 ### HTTP Request
 
-`GET {base_url}/site_translations/:site_translation_id/posts/:id`
+`GET {base_url}/posts/:id`
 
 ### URL Parameters
 
@@ -103,7 +103,7 @@ Parameter | Description
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/posts/:id`
-* `GET {base_url}/site_translations/:site_translation_id/posts/:i2d`
+* `GET {base_url}/site_translations/:site_translation_id/posts/:id`
 
 ## Create post
 
@@ -201,7 +201,7 @@ This endpoint updates a post.
 
 ### HTTP Request
 
-`PUT {base_url}/site_translations/:site_translation_id/posts/:id`
+`PUT {base_url}/posts/:id`
 
 ### URL Parameters
 
@@ -223,7 +223,7 @@ title     | The title of the post | Not null
 Alternative endpoints are:
 
 * `PUT {base_url}/sites/:site_id/posts/:id`
-* `PUT {base_url}/site_translations/:site_translation_id/posts/:i2d`
+* `PUT {base_url}/site_translations/:site_translation_id/posts/:id`
 
 ## Delete post
 
@@ -253,7 +253,7 @@ This endpoint deletes a specific post.
 
 ### HTTP Request
 
-`DELETE {base_url}/site_translations/:site_translation_id/posts/:id`
+`DELETE {base_url}/posts/:id`
 
 ### URL Parameters
 
@@ -268,4 +268,4 @@ Parameter | Description
 Alternative endpoints are:
 
 * `DELETE {base_url}/sites/:site_id/posts/:id`
-* `DELETE {base_url}/site_translations/:site_translation_id/posts/:i2d`
+* `DELETE {base_url}/site_translations/:site_translation_id/posts/:id`
