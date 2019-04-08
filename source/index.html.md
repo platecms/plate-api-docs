@@ -19,6 +19,7 @@ includes:
   - theme_files
   - attachment_folders
   - attachments
+  - form_messages
   - site_translations
   - posts
   - sections

@@ -66,4 +66,4 @@ pagination keys are accepted:
 Key | Description | Default value | Constraints
 --------- | ----------- | ----------- | -----------
 page | The page returned in the response | 1 | Has to be larger than 0
-per_page | The amount of records returned per page. | Has to be between 1 and 250
+per_page | The amount of records returned per page. | 250 | Has to be between 1 and 250

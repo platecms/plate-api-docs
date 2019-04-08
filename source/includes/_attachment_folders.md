@@ -46,7 +46,7 @@ Parameter | Description
 
 ## Get specific attachment folder
 
-> `GET {base_url}/sites/1/attachment_folders/3` returns JSON structured like this:
+> `GET {base_url}/attachment_folders/3` returns JSON structured like this:
 
 ```json
 {
@@ -141,7 +141,7 @@ Parameter | Description | Constraints
 }
 ```
 
-> `PUT {base_url}/sites/1/attachment_folders/3` with the above parameters returns JSON structured like this:
+> `PUT {base_url}/attachment_folders/3` with the above parameters returns JSON structured like this:
 
 ```json
 {
@@ -185,7 +185,7 @@ Alternative endpoints are:
 
 ## Delete attachment folder
 
-> `DELETE {base_url}/sites/1/attachment_folders/1` returns JSON structured like this:
+> `DELETE {base_url}/attachment_folders/1` returns JSON structured like this:
 
 ```json
 {
