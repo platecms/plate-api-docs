@@ -1,6 +1,6 @@
-# Sites
+## Sites
 
-## Get all sites
+### Get all sites
 
 > `GET {base_url}/partners/1/companies/1/sites/` returns JSON structured like this:
 
@@ -49,24 +49,24 @@
 
 This endpoint retrieves all sites in a specific company.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/companies/:company_id/sites`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :company_id | The id of the company to which the sites belong
 :partner_id | The id of the partner to which the sites belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/partners/:partner_id/sites/` (Gives all sites in a partner)
 
-## Get specific Site
+### Get specific Site
 
 > `GET {base_url}/companies/1/sites/2` returns JSON structured like this:
 
@@ -96,24 +96,24 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific site.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :company_id | The id of the company of the site to retrieve
 :id | The id of the site to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/companies/:company_id/sites/:id`
 
-## Create site
+### Create site
 
 > An example of valid JSON POST parameters
 
@@ -158,17 +158,17 @@ Alternative endpoints are:
 
 This endpoint creates a site.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/companies/:company_id/sites`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :company_id | The id of the company to which the new site belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -182,7 +182,7 @@ technical_contact_name | The name of the technical contact of the new site. |
 technical_contact_email | The email of the technical contact of the new site. |
 initial_subdomain | The initial subdomain of this site | Required. Has to be an url-safe string.
 
-## Update site
+### Update site
 
 > An example of valid JSON PUT parameters
 
@@ -221,18 +221,18 @@ initial_subdomain | The initial subdomain of this site | Required. Has to be an 
 
 This endpoint updates a site.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/sites/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :company_id | The id of the company to which the site to update belongs
 :id | The id of the site to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -245,13 +245,13 @@ technical_contact_name | The new name of the technical contact of the site to up
 technical_contact_email | The new email of the technical contact of the site to update. |
 enable_theme_updates | Whether this site should be linked to updates of its theme | Either `true` or `false`
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/companies/:company_id/sites/:id`
 
-## Delete site
+### Delete site
 
 > `DELETE {base_url}/companies/1/sites/3` returns JSON structured like this:
 
@@ -280,11 +280,11 @@ Alternative endpoints are:
 
 This endpoint deletes a specific company.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/sites/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -292,7 +292,7 @@ Parameter | Description
 :id | The id of the site to delete
 
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

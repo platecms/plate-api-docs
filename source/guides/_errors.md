@@ -1,4 +1,4 @@
-# Errors
+## Errors
 
 > For example when a partner with id=1 does not exist: `GET {base_url}/partners/1`
 
@@ -49,26 +49,26 @@ Error Code | Meaning
 !500 | Internal Server Error -- We had a problem with our server. Try again later.
 !503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
 
-## 401 Unauthorized
+### 401 Unauthorized
 
 The provided authentication details do not match any valid integration according to the
 [authentication requirements](#authentication). Please follow these requirements with an
 activated integration key.
 
-## 403 Forbidden
+### 403 Forbidden
 
 The request was understood, but the authenticated integration is not allowed to perform this action.
 
-## 404 Not Found
+### 404 Not Found
 
 One or more resources specified in the request could not be found.
 
-## 422 Unprocessable entity
+### 422 Unprocessable entity
 
 The request was understood and authorized, but the data provided does not match the requirements.
 For example one of the validations of a provided content field was not matched, or a required
 attribute was not given.
 
-## 429 Too Many Requests
+### 429 Too Many Requests
 
 The server received too many requests, please slow down the rate of requests.

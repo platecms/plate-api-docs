@@ -1,6 +1,6 @@
-# Site Translations
+## Site Translations
 
-## Get all site translations
+### Get all site translations
 
 > `GET {base_url}/sites/1/site_translations/` returns JSON structured like this:
 
@@ -61,18 +61,18 @@
 
 This endpoint retrieves all site translations for a specific site
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/site_translations`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the site_translations belong
 
 
-## Get specific site translations
+### Get specific site translations
 
 > `GET {base_url}/sites/1/site_translations/3` returns JSON structured like this:
 
@@ -107,24 +107,24 @@ Parameter | Description
 
 This endpoint retrieves a specific site translation.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/site_translations/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the site translation to retrieve
 :id | The id of the site translation to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/site_translations/:id`
 
-## Update site translation
+### Update site translation
 
 > An example of valid JSON PUT parameters
 
@@ -183,24 +183,24 @@ Alternative endpoints are:
 
 This endpoint updates a site translation.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/site_translations/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the site translation to retrieve
 :id | The id of the site translation to retrieve
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

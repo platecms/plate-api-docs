@@ -1,6 +1,6 @@
-# Attachment Folders
+## Attachment Folders
 
-## Get all attachment folders
+### Get all attachment folders
 
 > `GET {base_url}/sites/1/attachment_folders/` returns JSON structured like this:
 
@@ -33,18 +33,18 @@
 
 This endpoint retrieves all attachment folders for a specific site
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/attachment_folders`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the attachment folder belong
 
 
-## Get specific attachment folder
+### Get specific attachment folder
 
 > `GET {base_url}/attachment_folders/3` returns JSON structured like this:
 
@@ -65,24 +65,24 @@ Parameter | Description
 
 This endpoint retrieves a specific attachment folder.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/attachment_folders/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the attachment folder to retrieve
 :id | The id of the attachment folder to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/attachment_folders/:id`
 
-## Create attachment folder
+### Create attachment folder
 
 > An example of valid JSON POST parameters
 
@@ -113,23 +113,23 @@ Alternative endpoints are:
 
 This endpoint creates a attachment folder.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/sites/:site_id/attachment_folders`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the new attachment folder belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
  name     | The name of the folder | Not null. Required.
 
-## Update attachment folders
+### Update attachment folders
 
 > An example of valid JSON PUT parameters
 
@@ -160,30 +160,30 @@ Parameter | Description | Constraints
 
 This endpoint updates a site.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/attachment_folders/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the attachment folder to retrieve
 :id | The id of the attachment folder to retrieve
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
  name     | The name of the folder | Not null.
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/sites/:site_id/attachment_folders/:id`
 
-## Delete attachment folder
+### Delete attachment folder
 
 > `DELETE {base_url}/attachment_folders/1` returns JSON structured like this:
 
@@ -204,18 +204,18 @@ Alternative endpoints are:
 
 This endpoint deletes a specific attachment folder.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/attachment_folders/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the delete attachment folder belongs
 :id | The id of the attachment folder to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

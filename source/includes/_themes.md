@@ -1,6 +1,6 @@
-# Themes
+## Themes
 
-## Get all themes
+### Get all themes
 
 > `GET {base_url}/partners/1/themes/` returns JSON structured like this:
 
@@ -41,18 +41,18 @@
 
 This endpoint retrieves all themes for a specific partner
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/partners/:partner_id/themes`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the themes belong
 
 
-## Get specific Theme
+### Get specific Theme
 
 > `GET {base_url}/partners/1/themes/2` returns JSON structured like this:
 
@@ -78,17 +78,17 @@ Parameter | Description
 
 This endpoint retrieves a specific Theme.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/partners/:partner_id/themes/:id`
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/theme/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -96,7 +96,7 @@ Parameter | Description
 :id | The id of the company to retrieve
 
 
-## Create theme
+### Create theme
 
 > An example of valid JSON POST parameters
 
@@ -135,17 +135,17 @@ Parameter | Description
 
 This endpoint creates a theme.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/partners/:partner_id/themes`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the new theme belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -156,7 +156,7 @@ copy_from_theme_id | The id of the theme that will be installed on the new theme
 initial_domain | The subdomain where this theme will be visible | Required. Has to be an url-safe string.
 
 
-## Update theme
+### Update theme
 
 > An example of valid JSON PUT parameters
 
@@ -191,19 +191,19 @@ initial_domain | The subdomain where this theme will be visible | Required. Has 
 
 This endpoint updates a theme.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/themes/:id`
 
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the theme to update belongs
 :id | The id of the theme to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -212,14 +212,14 @@ languages | The new languages of the theme | Has to be comma-seperated string of
 main_language | The new main language of the theme | Has to be in `languages`
 
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/partners/:partner_id/themes/:id`
 
 
-## Delete theme
+### Delete theme
 
 > `DELETE {base_url}/partners/3/themes/5` returns JSON structured like this:
 
@@ -244,19 +244,19 @@ Alternative endpoints are:
 
 This endpoint deletes a specific theme.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/themes/:id`
 
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the theme to delete belongs
 :id | The id of the theme to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

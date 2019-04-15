@@ -1,10 +1,10 @@
-# Authentication and Authorization
+## Authentication and Authorization
 
 To authenticate a request, it has to be accompanied by authentication details.
 The authentication details consist of 2 parts, a public key and a signature calculated using
 the secret key. If a request is authenticated correctly, it will also be authorized.
 
-## Integration
+### Integration
 
 To create a key pair (a public and a secret key), you have to create a so-called integration
 in the Plate dashboard. An integration represents an external application that interacts
@@ -18,19 +18,19 @@ other applications.
 
 
 
-## Authentication procedure
+### Authentication procedure
 
 To authenticate a request, two headers have to be sent with the request: the `Date` header
 and the `Authorization` header.
 
-### Date header
+#### Date header
 
 The `Date` header should contain the current time, formatted
 according to <a href="https://tools.ietf.org/html/rfc7231#section-7.1.1.1" target="_blank">RFC 7231</a>.
 A request will be unauthorized if this date is more than 15 minutes past the time at which
 the server receives this request.
 
-### Authorization header
+#### Authorization header
 
 The `Authorization` consists of 3 parts: `hmac {public_key}:{signature}`.
 
@@ -40,7 +40,7 @@ want to use for authenticating this request.
 * `{signature}`: The signature of this request, which is calculated
 using the secret key matching the `{public_key}`.
 
-### Calculating the signature
+#### Calculating the signature
 
 > The layout of the string to sign of a request
 
@@ -91,7 +91,7 @@ the HMAC, is the secret key that corresponds to the public key that is used in t
 header, alongside the signature. The signature has be send in base64 representation, so not in a
 hexadecimal representation.
 
-#### Example
+##### Example
 
 The HMAC of the example string to sign (shown to the right), with a secret key of `mysecretkey`, would be:
 `FOjhvBsNceYeVNAJtneSLUeYbNO133Gj1sx+aEu7I8A2ixH3VyYpc6PtxGDGVzpG1EPrDaL7sgurV2Q0+8BHDQ==`.

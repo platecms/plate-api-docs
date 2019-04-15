@@ -1,6 +1,6 @@
-# Companies
+## Companies
 
-## Get all companies
+### Get all companies
 
 > `GET {base_url}/partners/1/companies/` returns JSON structured like this:
 
@@ -57,18 +57,18 @@
 
 This endpoint retrieves all companies in a specific partner.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/partners/:partner_id/companies`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the companies belong
 
 
-## Get specific Company
+### Get specific Company
 
 > `GET {base_url}/partners/1/companies/1` returns JSON structured like this:
 
@@ -102,23 +102,23 @@ Parameter | Description
 
 This endpoint retrieves a specific company.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/companies/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the company to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/partners/:partner_id/companies/:id`
 
-## Create company
+### Create company
 
 > An example of valid JSON POST parameters
 
@@ -161,17 +161,17 @@ Alternative endpoints are:
 
 This endpoint creates a company.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/partners/:partner_id/companies`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the new company belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description
 --------- | -----------
@@ -189,12 +189,12 @@ invoice_contact_first_name | The first name for the invoice contact for the new 
 invoice_contact_last_name | The last name for the invoice contact for the new company
 invoice_contact_email | The email address for the invoice contact for the new company
 
-### Constraints
+#### Constraints
 This endpoint has the following constraints:
 
 * A parameter `name` with length > 1 should be given
 
-## Update company
+### Update company
 
 > An example of valid JSON PUT parameters
 
@@ -237,18 +237,18 @@ This endpoint has the following constraints:
 
 This endpoint updates a specific company.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/companies/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the updated company belongs
 :id | The id of the company to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -266,20 +266,20 @@ invoice_contact_first_name | The new first name for the invoice contact for this
 invoice_contact_last_name | The new last name for the invoice contact for this company | Required.
 invoice_contact_email | The new email address for the invoice contact for this company | Required.
 
-### Constraints
+#### Constraints
 This endpoint has the following constraints:
 
 * The updated company needs to have a value for all required PUT parameters. So either a
 value was already set, or a new value has to be set through this request.
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/partners/:partner_id/companies/:id`
 
 
-## Delete company
+### Delete company
 
 > `DELETE {base_url}/partners/1/companies/1` returns JSON structured like this:
 
@@ -294,23 +294,23 @@ Alternative endpoints are:
 
 This endpoint deletes a specific company.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/companies/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :partner_id | The id of the partner to which the delete company belongs
 :id | The id of the company to delete
 
-### Constraints
+#### Constraints
 This endpoint has the following constraints:
 
 * There should be no sites in the company with id `:id`
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

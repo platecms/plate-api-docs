@@ -1,6 +1,6 @@
-# Theme files
+## Theme files
 
-## Get all theme files
+### Get all theme files
 
 > `GET {base_url}/sites/1/theme_files/` returns JSON structured like this:
 
@@ -39,32 +39,32 @@
 
 This endpoint retrieves all theme files for a specific site
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/theme_files`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the theme files belong
 
-## Download all theme files
+### Download all theme files
 
 This endpoint returns all theme files of a specific site packed together in a zip file.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/theme_files/download`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the theme files to download
 
 
-## Get specific theme file
+### Get specific theme file
 
 > `GET {base_url}/sites/1/theme_files/2` returns JSON structured like this:
 
@@ -90,27 +90,27 @@ Parameter | Description
 This endpoint retrieves details about a specific theme file, but does not return the actual
 content of the theme file
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/theme_files/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site of the theme_file to retrieve
 :id | The id of the theme_file to retrieve
 
-## Download specific theme file
+### Download specific theme file
 
 This endpoint returns a specific theme file as a file.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/theme_files/:id/download`
 
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -118,7 +118,7 @@ Parameter | Description
 :id | The id of the theme_file to download
 
 
-## Create theme file
+### Create theme file
 
 > An example of a valid HTTP request body, given the header `Content-type: multipart/formdata; boundary: arandomuniquestring098123`
 
@@ -170,17 +170,17 @@ most other requests, and should follow the `multipart/form-data`
 principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1" target="_blank"> RFC 7578</a>
 </aside>
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/sites/:site_id/theme_files`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the new theme_file belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -188,7 +188,7 @@ path      | The path where the new theme_file is situated in the theme or site |
 file      | The new theme file.  | Required
 
 
-## Update theme file
+### Update theme file
 
 > An example of valid JSON PUT parameters
 
@@ -223,18 +223,18 @@ file      | The new theme file.  | Required
 
 This endpoint updates a theme file.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/sites/:site_id/theme_files/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the theme file to update belongs
 :id | The id of the theme file to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -242,7 +242,7 @@ file_name      | The new name of the theme file | Not null
 path | The new path of the theme file |
 
 
-## Delete theme file
+### Delete theme file
 
 > `DELETE {base_url}/sites/1/theme_files/2` returns JSON structured like this:
 
@@ -266,11 +266,11 @@ path | The new path of the theme file |
 
 This endpoint deletes a specific theme file.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/sites/:site_id/theme_files/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------

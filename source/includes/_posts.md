@@ -1,6 +1,6 @@
-# Posts
+## Posts
 
-## Get all posts
+### Get all posts
 
 > `GET {base_url}/site_translations/1/posts/` returns JSON structured like this:
 
@@ -43,24 +43,24 @@
 
 This endpoint retrieves all posts for a specific site translation
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/site_translations/:site_translation_id/posts`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_translation_id | The id of the site translation to which the posts belong
 :site_id | The id of the site to which the posts belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/posts` (Returns all posts in a site)
 
-## Get specific post
+### Get specific post
 
 > `GET {base_url}/site_translations/1/posts/3` returns JSON structured like this:
 
@@ -86,11 +86,11 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific post.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/posts/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -98,14 +98,14 @@ Parameter | Description
 :id | The id of the post to retrieve
 :site_id | The id of the site of the post to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/posts/:id`
 * `GET {base_url}/site_translations/:site_translation_id/posts/:id`
 
-## Create post
+### Create post
 
 > An example of valid JSON POST parameters
 
@@ -142,17 +142,17 @@ Alternative endpoints are:
 
 This endpoint creates a post.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/site_translations/:site_translation_id/posts`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_translation_id | The id of the site translation to which the new post belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -163,7 +163,7 @@ seo_title | The SEO title of the new post |
 seo_description | The SEO description of the new post |
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-## Update post
+### Update post
 
 > An example of valid JSON PUT parameters
 
@@ -199,11 +199,11 @@ seo_description | The SEO description of the new post |
 
 This endpoint updates a post.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/posts/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -211,21 +211,21 @@ Parameter | Description
 :id | The id of the post to update
 :site_id | The id of the site of the post to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 title     | The title of the post | Not null
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/sites/:site_id/posts/:id`
 * `PUT {base_url}/site_translations/:site_translation_id/posts/:id`
 
-## Delete post
+### Delete post
 
 > `DELETE {base_url}/site_translations/1/posts/3` returns JSON structured like this:
 
@@ -251,11 +251,11 @@ Alternative endpoints are:
 
 This endpoint deletes a specific post.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/posts/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -263,7 +263,7 @@ Parameter | Description
 :id | The id of the post to delete
 :site_id | The id of the site of the post to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

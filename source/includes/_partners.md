@@ -1,6 +1,6 @@
-# Partners
+## Partners
 
-## Get specific partner
+### Get specific partner
 
 > `GET {base_url}/partners/1` returns JSON structured like this:
 
@@ -20,17 +20,17 @@
 
 This endpoint retrieves a specific partner.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/partners/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the partner to retrieve
 
-## Update partner
+### Update partner
 
 > An example of valid JSON PUT parameters
 
@@ -59,23 +59,23 @@ Parameter | Description
 
 This endpoint updates a specific partner.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/partners/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the partner to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description
 --------- | -----------
 name | The new name for this partner
 
-### Constraints
+#### Constraints
 This endpoint has the following constraints:
 
 * If the parameter `name` is given, it should have length > 1

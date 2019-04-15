@@ -1,6 +1,6 @@
-# Rows
+## Rows
 
-## Get all rows
+### Get all rows
 
 > `GET {base_url}/sections/1/rows/` returns JSON structured like this:
 
@@ -33,11 +33,11 @@
 
 This endpoint retrieves all rows for a specific section
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sections/:section_id/rows`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -46,7 +46,7 @@ Parameter | Description
 :site_translation_id | The id of the site translation to which the rows belong
 :post_id | The id of the post to which the rows belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -54,7 +54,7 @@ Alternative endpoints are:
 * `GET {base_url}/site_translations/:site_translation_id/rows` (Returns all rows in a site translation)
 * `GET {base_url}/posts/:post_id/rows` (Returns all rows in a post)
 
-## Get specific row
+### Get specific row
 
 > `GET {base_url}/sections/1/rows/3` returns JSON structured like this:
 
@@ -75,11 +75,11 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific row.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/rows/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -89,7 +89,7 @@ Parameter | Description
 :site_translation_id | The id of the site of site_translation the row to retrieve
 :post_id | The id of the post of the row to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -98,7 +98,7 @@ Alternative endpoints are:
 * `GET {base_url}/posts/:post_id/rows/:id`
 * `GET {base_url}/sections/:section_id/rows/:id`
 
-## Create row
+### Create row
 
 > An example of valid JSON POST parameters
 
@@ -129,23 +129,23 @@ Alternative endpoints are:
 
 This endpoint creates a row in a section.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/sections/:section_id/rows`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :section_id | The id of the sections to which the new row belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new row | Required
 
-## Update row
+### Update row
 
 > An example of valid JSON PUT parameters
 
@@ -176,11 +176,11 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 This endpoint updates a row.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/rows/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -190,13 +190,13 @@ Parameter | Description
 :site_translation_id | The id of the site translation of the row to update
 :post_id | The id of the post of the row to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the row | Not null
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -205,7 +205,7 @@ Alternative endpoints are:
 * `PUT {base_url}/posts/:post_id/rows/:id`
 * `PUT {base_url}/sections/:section_id/rows/:id`
 
-## Delete row
+### Delete row
 
 > `DELETE {base_url}/sections/1/rows/4` returns JSON structured like this:
 
@@ -226,11 +226,11 @@ Alternative endpoints are:
 
 This endpoint deletes a specific row.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/rows/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -240,7 +240,7 @@ Parameter | Description
 :site_translation_id | The id of the site_translation of the row to delete
 :post_id | The id of the site of the row to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

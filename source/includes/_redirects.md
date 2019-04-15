@@ -1,6 +1,6 @@
-# Redirects
+## Redirects
 
-## Get all redirects
+### Get all redirects
 
 > `GET {base_url}/posts/1/redirects/` returns JSON structured like this:
 
@@ -33,18 +33,18 @@
 
 This endpoint retrieves all redirects in a specific post.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/posts/:post_id/redirects`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :post_id | The id of the post to which the redirects belong
 
 
-## Get specific Redirect
+### Get specific Redirect
 
 > `GET {base_url}/posts/1/redirects/1` returns JSON structured like this:
 
@@ -66,23 +66,23 @@ Parameter | Description
 
 This endpoint retrieves a specific redirect.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/redirects/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the redirect to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/posts/:post_id/redirects/:id`
 
-## Create redirect
+### Create redirect
 
 > An example of valid JSON POST parameters
 
@@ -113,23 +113,23 @@ Alternative endpoints are:
 
 This endpoint creates a redirect.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/posts/:post_id/redirects`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :post_id | The id of the post to which the new redirect belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -------------
 from_url | The path which is redirected | Is a valid [http path](https://tools.ietf.org/html/rfc3986#section-3.3).
 
-## Update redirect
+### Update redirect
 
 > An example of valid JSON PUT parameters
 
@@ -160,31 +160,31 @@ from_url | The path which is redirected | Is a valid [http path](https://tools.i
 
 This endpoint updates a specific redirect.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/redirects/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :post_id | The id of the post to which the updated redirect belongs
 :id | The id of the redirect to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 from_url | The new path which is redirected | Is a valid [http path](https://tools.ietf.org/html/rfc3986#section-3.3).
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/posts/:post_id/redirects/:id`
 
 
-## Delete redirect
+### Delete redirect
 
 > `DELETE {base_url}/posts/1/redirects/1` returns JSON structured like this:
 
@@ -205,18 +205,18 @@ Alternative endpoints are:
 
 This endpoint deletes a specific redirect.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/redirects/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :post_id | The id of the post to which the delete redirect belongs
 :id | The id of the redirect to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

@@ -1,6 +1,6 @@
-# Attachment
+## Attachment
 
-## Get all attachments
+### Get all attachments
 
 > `GET {base_url}/sites/1/attachments/` returns JSON structured like this:
 
@@ -39,25 +39,25 @@
 
 This endpoint retrieves all attachments for a specific site
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sites/:site_id/attachments`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the attachments belong
 :attachment_folder_id | The id of the attachment folder to which the attachments belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/attachment_folder/:attachment_folder_id/attachments/` (Gives all attachments in an attachment folder)
 
 
-## Get specific attachment
+### Get specific attachment
 
 > `GET {base_url}/sites/1/attachments/3` returns JSON structured like this:
 
@@ -81,11 +81,11 @@ Alternative endpoints are:
 
 This endpoint retrieves information about a specific attachment, but does not return the actual content of the attachment
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/attachments/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -93,7 +93,7 @@ Parameter | Description
 :id | The id of the attachment to retrieve
 :attachment_folder_id | The id of the attachment folder to which the attachments belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -101,15 +101,15 @@ Alternative endpoints are:
 * `GET {base_url}/attachment_folders/:attachment_folder_id/attachments/:id`
 
 
-## Download specific attachment
+### Download specific attachment
 
 This endpoint returns a specific attachment as a file.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/attachments/:id/download`
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -117,7 +117,7 @@ Alternative endpoints are:
 * `GET {base_url}/attachment_folders/:attachment_folder_id/attachments/:id/download`
 
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -126,7 +126,7 @@ Parameter | Description
 :attachment_folder_id | The id of the attachment folder to which the attachments belong
 
 
-## Create attachment
+### Create attachment
 
 > An example of a valid HTTP request body, given the header `Content-type: multipart/formdata; boundary: arandomuniquestring098123`
 
@@ -178,32 +178,32 @@ most other requests, and should follow the `multipart/form-data`
 principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1" target="_blank"> RFC 7578</a>
 </aside>
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/sites/:site_id/attachments`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the new theme_file belongs
 :theme_id | The id of the theme to which the new theme_file belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 title      | The title of the new attachment | Not null.
 file      | The new attachment.  | Required
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `POST {base_url}/attachment_folders/:attachment_folder_id/attachments`
 
 
-## Update attachments
+### Update attachments
 
 > An example of valid JSON PUT parameters
 
@@ -237,11 +237,11 @@ Alternative endpoints are:
 
 This endpoint updates a site.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/attachments/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -249,21 +249,21 @@ Parameter | Description
 :id | The id of the attachment to retrieve
 :attachment_folder_id | The id of the attachment folder to which the attachments belong
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 title      | The title of the updated attachment | Not null.
 attachment_folder_id | The id of the attachment folder to which the updated attachment belongs | Id of an existing attachment folder.
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `PUT {base_url}/attachment_folders/:attachment_folder_id/attachments/:id`
 * `PUT {base_url}/sites/:site_id/attachments/:id`
 
-## Delete attachment
+### Delete attachment
 
 > `DELETE {base_url}/sites/1/attachments/5` returns JSON structured like this:
 
@@ -287,11 +287,11 @@ Alternative endpoints are:
 
 This endpoint deletes a specific attachment.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/attachments/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -299,7 +299,7 @@ Parameter | Description
 :id | The id of the attachment to retrieve
 :attachment_folder_id | The id of the attachment folder to which the attachments belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

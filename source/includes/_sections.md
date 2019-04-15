@@ -1,6 +1,6 @@
-# Sections
+## Sections
 
-## Get all sections
+### Get all sections
 
 > `GET {base_url}/posts/1/sections/` returns JSON structured like this:
 
@@ -43,11 +43,11 @@
 
 This endpoint retrieves all sections for a specific post
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/posts/:post_id/sections`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -55,14 +55,14 @@ Parameter | Description
 :site_id | The id of the site to which the sections belong
 :site_translation_id | The id of the site translation to which the sections belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
 * `GET {base_url}/sites/:site_id/sections` (Returns all sections in a site)
 * `GET {base_url}/site_translations/:site_translation_id/sections` (Returns all sections in a site translation)
 
-## Get specific section
+### Get specific section
 
 > `GET {base_url}/posts/1/sections/3` returns JSON structured like this:
 
@@ -88,11 +88,11 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific section.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/sections/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -101,7 +101,7 @@ Parameter | Description
 :site_id | The id of the site of the section to retrieve
 :site_translation_id | The id of the site of site_translation the section to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -109,7 +109,7 @@ Alternative endpoints are:
 * `GET {base_url}/site_translations/:site_translation_id/sections/:id`
 * `GET {base_url}/posts/:post_id/sections/:id`
 
-## Create section
+### Create section
 
 > An example of valid JSON POST parameters
 
@@ -147,17 +147,17 @@ Alternative endpoints are:
 
 This endpoint creates a section in a post.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/posts/:post_id/sections`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :post_id | The id of the posts to which the new section belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -166,7 +166,7 @@ name     | The name of the new section | Required
 position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new section | Required
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-## Update section
+### Update section
 
 > An example of valid JSON PUT parameters
 
@@ -203,11 +203,11 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 This endpoint updates a section.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/sections/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -216,7 +216,7 @@ Parameter | Description
 :site_id | The id of the site of the section to update
 :site_translation_id | The id of the site translation of the section to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -224,7 +224,7 @@ name     | The new name of the section | Not null
 position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the section | Not null
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -232,7 +232,7 @@ Alternative endpoints are:
 * `PUT {base_url}/site_translations/:site_translation_id/sections/:id`
 * `PUT {base_url}/posts/:post_id/sections/:id`
 
-## Delete section
+### Delete section
 
 > `DELETE {base_url}/posts/1/sections/4` returns JSON structured like this:
 
@@ -258,11 +258,11 @@ Alternative endpoints are:
 
 This endpoint deletes a specific section.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/sections/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -271,7 +271,7 @@ Parameter | Description
 :site_id | The id of the site of the section to delete
 :site_translation_id | The id of the site_translation of the section to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

@@ -1,6 +1,6 @@
-# Columns
+## Columns
 
-## Get all columns
+### Get all columns
 
 > `GET {base_url}/rows/1/columns/` returns JSON structured like this:
 
@@ -33,11 +33,11 @@
 
 This endpoint retrieves all columns for a specific row
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/rows/:row_id/columns`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -47,7 +47,7 @@ Parameter | Description
 :post_id | The id of the post to which the columns belong
 :section_id | The id of the section to which the columns belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -56,7 +56,7 @@ Alternative endpoints are:
 * `GET {base_url}/posts/:post_id/columns` (Returns all columns in a post)
 * `GET {base_url}/sections/:section_id/columns` (Returns all columns in a section)
 
-## Get specific column
+### Get specific column
 
 > `GET {base_url}/rows/1/columns/3` returns JSON structured like this:
 
@@ -77,11 +77,11 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific column.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/columns/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -92,7 +92,7 @@ Parameter | Description
 :post_id | The id of the post of the column to retrieve
 :section_id | The id of the section of the column to update
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -101,7 +101,7 @@ Alternative endpoints are:
 * `GET {base_url}/posts/:post_id/columns/:id`
 * `GET {base_url}/sections/:section_id/columns/:id`
 
-## Create column
+### Create column
 
 > An example of valid JSON POST parameters
 
@@ -132,23 +132,23 @@ Alternative endpoints are:
 
 This endpoint creates a column in a row.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/rows/:row_id/columns`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :row_id | The id of the rows to which the new column belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new column | Required
 
-## Update column
+### Update column
 
 > An example of valid JSON PUT parameters
 
@@ -179,11 +179,11 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 This endpoint updates a column.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/columns/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -194,13 +194,13 @@ Parameter | Description
 :post_id | The id of the post of the column to update
 :section_id | The id of the section of the column to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the column | Not null
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -210,7 +210,7 @@ Alternative endpoints are:
 * `PUT {base_url}/sections/:section_id/columns/:id`
 * `PUT {base_url}/rows/:row_id/columns/:id`
 
-## Update column grid
+### Update column grid
 
 > An example of valid JSON PUT parameters
 
@@ -260,24 +260,24 @@ Alternative endpoints are:
 
 This endpoint updates the grid of columns in a row. It requires an array with objects containing the id of a column, and the (new) non-zero grid of that column. The sum of all the specified grids has to be 12, and all column ids should be present.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/rows/:row_id/columns/`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :row_id | The id of the row of the columns to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 id | The id of a column |
 grid | The grid of a column | At least 1. Not null. The grids should sum up to 12.
 
-## Delete column
+### Delete column
 
 > `DELETE {base_url}/rows/1/columns/4` returns JSON structured like this:
 
@@ -298,11 +298,11 @@ grid | The grid of a column | At least 1. Not null. The grids should sum up to 1
 
 This endpoint deletes a specific column.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/columns/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -313,7 +313,7 @@ Parameter | Description
 :post_id | The id of the site of the column to delete
 :section_id | The id of the section of the column to update
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 

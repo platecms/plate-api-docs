@@ -1,17 +1,23 @@
 ---
 title: Plate API Reference
 
-language_tabs: # must be one of https://git.io/vQNgJ
+language_tabs: ## must be one of https://git.io/vQNgJ
   - json
+
+plate_dashboard_url: https://www.startwithplate.com/dashboad
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
-includes:
+guides:
   - connecting_to_plate
   - authentication
   - pagination
+  - content_objects
+  - errors
+
+resources:
   - partners
   - companies
   - sites
@@ -27,7 +33,6 @@ includes:
   - columns
   - elements
   - redirects
-  - errors
 
 search: true
 ---
@@ -36,3 +41,8 @@ search: true
 
 Welcome to the [Plate](https://www.getplate.com) REST API documentation. In this
 documentation you will find a guide on how to use the Plate API.
+
+<%= partial "includes/guides" %>
+
+
+<%= partial "includes/resources" %>

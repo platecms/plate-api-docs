@@ -1,6 +1,6 @@
-# Elements
+## Elements
 
-## Get all elements
+### Get all elements
 
 > `GET {base_url}/columns/1/elements/` returns JSON structured like this:
 
@@ -41,11 +41,11 @@
 
 This endpoint retrieves all elements for a specific column
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/columns/:column_id/elements`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
@@ -56,7 +56,7 @@ Parameter | Description
 :section_id | The id of the sections to which the elements belong
 :row_id | The id of the rows to which the elements belong
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -66,7 +66,7 @@ Alternative endpoints are:
 * `GET {base_url}/sections/:section_id/elements` (Returns all elements in a section)
 * `GET {base_url}/rows/:row_id/elements` (Returns all elements in a row)
 
-## Get specific element
+### Get specific element
 
 > `GET {base_url}/columns/1/elements/3` returns JSON structured like this:
 
@@ -91,17 +91,17 @@ Alternative endpoints are:
 
 This endpoint retrieves a specific element.
 
-### HTTP Request
+#### HTTP Request
 
 `GET {base_url}/elements/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the element to retrieve
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -112,7 +112,7 @@ Alternative endpoints are:
 * `GET {base_url}/rows/:row_id/elements/:id`
 * `GET {base_url}/columns/:column_id/elements/:id`
 
-## Create element
+### Create element
 
 > An example of valid JSON POST parameters
 
@@ -148,17 +148,17 @@ Alternative endpoints are:
 
 This endpoint creates an element in a column.
 
-### HTTP Request
+#### HTTP Request
 
 `POST {base_url}/columns/:column_id/elements`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :column_id | The id of the columns to which the new element belongs
 
-### POST Parameters
+#### POST Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
@@ -166,7 +166,7 @@ content_type_id | The content type of the new element | Required
 position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new element | Required
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-## Update element
+### Update element
 
 > An example of valid JSON PUT parameters
 
@@ -201,24 +201,24 @@ position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATIO
 
 This endpoint updates an element.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT {base_url}/elements/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the element to update
 
-### PUT Parameters
+#### PUT Parameters
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the element | Not null
  | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
@@ -229,7 +229,7 @@ Alternative endpoints are:
 * `PUT {base_url}/rows/:row_id/elements/:id`
 * `PUT {base_url}/columns/:column_id/elements/:id`
 
-## Delete element
+### Delete element
 
 > `DELETE {base_url}/columns/1/elements/4` returns JSON structured like this:
 
@@ -254,17 +254,17 @@ Alternative endpoints are:
 
 This endpoint deletes a specific element.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE {base_url}/elements/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The id of the element to delete
 
-### Alternative endpoints
+#### Alternative endpoints
 
 Alternative endpoints are:
 
