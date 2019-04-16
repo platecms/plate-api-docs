@@ -161,7 +161,7 @@ title     | The title of the new post | Required
 language  | The language of the new post | Required. Has to be one of the languages of the site of the new post.
 seo_title | The SEO title of the new post |
 seo_description | The SEO description of the new post |
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 ### Update post
 
@@ -216,7 +216,7 @@ Parameter | Description
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 title     | The title of the post | Not null
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 #### Alternative endpoints
 

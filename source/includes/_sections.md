@@ -163,8 +163,8 @@ Parameter | Description | Constraints
 --------- | ----------- | -----------
 content_type_id | The content type of the new section | Required
 name     | The name of the new section | Required
-position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new section | Required
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 ### Update section
 
@@ -221,8 +221,8 @@ Parameter | Description
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 name     | The new name of the section | Not null
-position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the section | Not null
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 #### Alternative endpoints
 

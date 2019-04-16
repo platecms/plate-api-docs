@@ -163,8 +163,8 @@ Parameter | Description
 Parameter | Description | Constraints
 --------- | ----------- | -----------
 content_type_id | The content type of the new element | Required
-position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new element | Required
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
+ | **--Accepts [Content object parameters](#requests)--** |
 
 ### Update element
 
@@ -215,8 +215,8 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the element | Not null
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 #### Alternative endpoints
 

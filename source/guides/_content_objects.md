@@ -3,9 +3,11 @@
 Some of the [resources](#resources) available through the Plate API have
 a dynamic set of content fields. These content fields can be defined through
 the Plate dashboard. Resources which have such content fields are called content
-objects. The endpoints for content objects have some specific features/requirements.
+objects. Examples of content objects are [site translations](#site-translations),
+[posts](#posts), [sections](#sections) and [elements](#elements).
+The endpoints for content objects have some specific features/requirements.
 
-### Responses
+### Responses for content objects
 
 > A GET endpoint for a content object may return JSON as follows:
 
@@ -15,7 +17,6 @@ objects. The endpoints for content objects have some specific features/requireme
     "id": 1,
     "type": "elements",
     "attributes": {
-      "position": 1,
       "content": {
         "categories": {
           "value": [789],
@@ -28,11 +29,10 @@ objects. The endpoints for content objects have some specific features/requireme
           "type": "string",
           "content_field_id": 456
         }
-      }
-    },
-    "relations": {
+      },
       ...
-    }
+    },
+    ...
   }
 }
 ```
@@ -71,8 +71,8 @@ For reference fields, the `value` property will be an array of numbers. These
 numbers are ID's of referenced resources for the content field. The
 `subtype` property will indicate what kind of resource is selected/referenced.
 
-<aside class="notice"> For example, if the `value` property equals `[12, 23, 24]`, the `type` property equals
-`reference`, and the `subtype` property equals `posts`, then the content field contains
+<aside class="notice"> For example, if the <code>value</code> property equals <code>[12, 23, 24]</code>, the <code>type</code> property equals
+<code>reference</code>, and the <code>subtype</code> property equals <code>posts</code>, then the content field contains
 references to the posts with ids 12, 23 and 24. </aside>
 
 For array fields, the `value` property will be an array of numbers or strings,
@@ -81,7 +81,7 @@ the `value` property will be an array of numbers, representing attachments. If t
 `subtype` property equals `text`, then the `value` property will be an array of
 strings, which is the actual value of the content field.
 
-### Requests
+### Requests for content objects
 
 > A request to a POST endpoint for a content object may contain data as follows:
 

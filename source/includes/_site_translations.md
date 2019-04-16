@@ -198,7 +198,7 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
- | **--[Content field parameters](#Content field parameters) --**#TODO Fix link to explanation of content field parameters|
+ | **--Accepts [Content field parameters](#requests-for-content-objects)--** |
 
 #### Alternative endpoints
 

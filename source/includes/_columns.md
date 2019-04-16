@@ -146,7 +146,7 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new column | Required
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
 
 ### Update column
 
@@ -198,7 +198,7 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the column | Not null
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
 
 #### Alternative endpoints
 

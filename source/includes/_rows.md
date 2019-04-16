@@ -143,7 +143,7 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-position | The position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the new row | Required
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
 
 ### Update row
 
@@ -194,7 +194,7 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-position | The new position (Read more about positions. #TODO FIX LINK TO EXPLANATION OF POSITION) of the row | Not null
+ | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
 
 #### Alternative endpoints
 
