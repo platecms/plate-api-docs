@@ -28,12 +28,22 @@ companies of the partner with id 1 should be returned.
 
 #### Query parameter
 A Query parameter is one that is appended to the endpoint in the form of a [query string](https://en.wikipedia.org/wiki/Query_string).
-They can be used to convey information about for example [pagination](#pagination) #TODO FIX PAGINATION REFERENCE.
+They can be used to convey information about for example [pagination](#pagination)
 The endpoint `www.startwithplate.com/api/v2/partners/1/companies?pagination_page=3`
 contains the Query parameter `pagination_page` with value `3`, indicating that
 the third page of the pagination should be returned.
 
 #### POST/PUT parameters
+
+```json
+{
+  "data":{
+    "name": "A new name",
+    "path": "/some/random/path"
+  }
+}
+```
+
 A POST/PUT parameter is one that is sent in the body of a POST or PUT request.
 Plate requires this body to be structured in [JSON format](https://www.w3schools.com/js/js_json_syntax.asp).
 The description of each endpoint in the [resources](#resources) section also describes
@@ -42,12 +52,3 @@ the accepted POST/PUT parameters.
 <aside class="warning">Note that the parameters have to wrapped in a `data` property.</aside>
 
 The example shown aside, shows how to submit the POST parameters `name` and `path`.
-
-```json
-{
-    "data":{
-      "name": "A new name",
-      "path": "/some/random/path"
-    }
-}
-```

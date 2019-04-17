@@ -71,11 +71,6 @@ Parameter | Description
 
 #### PUT Parameters
 
-Parameter | Description
---------- | -----------
-name | The new name for this partner
-
-#### Constraints
-This endpoint has the following constraints:
-
-* If the parameter `name` is given, it should have length > 1
+Parameter | Description | Constraints
+--------- | ----------- | -----------
+name | The new name for this partner | String. Not null

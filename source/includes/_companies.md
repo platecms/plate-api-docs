@@ -173,26 +173,21 @@ Parameter | Description
 
 #### POST Parameters
 
-Parameter | Description
---------- | -----------
-name | The name for the new company
-street_name | The street name for the new company
-street_no | The street number for the new company
-street_suffix | The street suffix for the new company
-city | The city for the new company
-zipcode | The zipcode for the new company
-country | The country for the new company
-phone | The phone number for this company
-kvk_number | The [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for the new company
-vat_number | The [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for the new company
-invoice_contact_first_name | The first name for the invoice contact for the new company
-invoice_contact_last_name | The last name for the invoice contact for the new company
-invoice_contact_email | The email address for the invoice contact for the new company
-
-#### Constraints
-This endpoint has the following constraints:
-
-* A parameter `name` with length > 1 should be given
+Parameter | Description | Constraints
+--------- | ----------- | -----------
+name | The name for the new company | String. Not null
+street_name | The street name for the new company |
+street_no | The street number for the new company |
+street_suffix | The street suffix for the new company |
+city | The city for the new company |
+zipcode | The zipcode for the new company |
+country | The country for the new company |
+phone | The phone number for this company |
+kvk_number | The [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for the new company |
+vat_number | The [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for the new company |
+invoice_contact_first_name | The first name for the invoice contact for the new company |
+invoice_contact_last_name | The last name for the invoice contact for the new company |
+invoice_contact_email | The email address for the invoice contact for the new company |
 
 ### Update company
 
@@ -252,25 +247,20 @@ Parameter | Description
 
 Parameter | Description | Constraints
 --------- | ----------- | -----------
-name | The new name for this company | Required.
-street_name | The new street name for this company | Required.
-street_no | The new street number for this company | Required.
+name | The new name for this company | Not null.
+street_name | The new street name for this company | Not null.
+street_no | The new street number for this company | Not null.
 street_suffix | The new street suffix for this company
-city | The new city for this company | Required.
-zipcode | The new zipcode for this company | Required.
-country | The new country for this company | Required.
+city | The new city for this company | Not null.
+zipcode | The new zipcode for this company | Not null.
+country | The new country for this company | Not null.
 phone | The new phone number for this company
-kvk_number | The new [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for this company | Required.
-vat_number | The new [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for this company | Required.
-invoice_contact_first_name | The new first name for the invoice contact for this company | Required.
-invoice_contact_last_name | The new last name for the invoice contact for this company | Required.
-invoice_contact_email | The new email address for the invoice contact for this company | Required.
+kvk_number | The new [kvk number](https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/) for this company | Not null.
+vat_number | The new [vat number](https://en.wikipedia.org/wiki/VAT_identification_number) for this company | Not null.
+invoice_contact_first_name | The new first name for the invoice contact for this company | Not null.
+invoice_contact_last_name | The new last name for the invoice contact for this company | Not null.
+invoice_contact_email | The new email address for the invoice contact for this company | Not null.
 
-#### Constraints
-This endpoint has the following constraints:
-
-* The updated company needs to have a value for all required PUT parameters. So either a
-value was already set, or a new value has to be set through this request.
 
 #### Alternative endpoints
 
