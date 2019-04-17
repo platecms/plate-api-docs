@@ -198,6 +198,7 @@
     </style>
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+    <link href="stylesheets/custom.css" rel="stylesheet" />
       <script src="javascripts/all.js"></script>
   </head>
 
@@ -209,7 +210,7 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/plate_logo.png" class="logo" alt="Plate logo" />
+      <img src="images/plate_logo_grey.png" class="logo" alt="Plate logo grey" />
         <div class="lang-selector">
               <a href="#" data-language-name="json">json</a>
         </div>
@@ -227,7 +228,7 @@
               <ul class="toc-list-h2">
                   <li>
                     <a href="#connecting-to-the-plate-api" class="toc-h2 toc-link" data-title="Connecting to the Plate API">Connecting to the Plate API</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#method" class="toc-h3 toc-link" data-title="Method">Method</a>
                           </li>
@@ -241,7 +242,7 @@
                   </li>
                   <li>
                     <a href="#authentication-and-authorization" class="toc-h2 toc-link" data-title="Authentication and Authorization">Authentication and Authorization</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#integration" class="toc-h3 toc-link" data-title="Integration">Integration</a>
                           </li>
@@ -252,7 +253,7 @@
                   </li>
                   <li>
                     <a href="#pagination" class="toc-h2 toc-link" data-title="Pagination">Pagination</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#pagination-response-keys" class="toc-h3 toc-link" data-title="Pagination response keys">Pagination response keys</a>
                           </li>
@@ -263,7 +264,7 @@
                   </li>
                   <li>
                     <a href="#content-objects" class="toc-h2 toc-link" data-title="Content Objects">Content Objects</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#responses-for-content-objects" class="toc-h3 toc-link" data-title="Responses for content objects">Responses for content objects</a>
                           </li>
@@ -274,7 +275,7 @@
                   </li>
                   <li>
                     <a href="#positionable-objects" class="toc-h2 toc-link" data-title="Positionable Objects">Positionable Objects</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#responses-for-positionable-objects" class="toc-h3 toc-link" data-title="Responses for positionable objects">Responses for positionable objects</a>
                           </li>
@@ -285,7 +286,7 @@
                   </li>
                   <li>
                     <a href="#errors" class="toc-h2 toc-link" data-title="Errors">Errors</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#400-bad-request" class="toc-h3 toc-link" data-title="400 Bad Request">400 Bad Request</a>
                           </li>
@@ -316,7 +317,7 @@
               <ul class="toc-list-h2">
                   <li>
                     <a href="#partners" class="toc-h2 toc-link" data-title="Partners">Partners</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-specific-partner" class="toc-h3 toc-link" data-title="Get specific partner">Get specific partner</a>
                           </li>
@@ -327,7 +328,7 @@
                   </li>
                   <li>
                     <a href="#companies" class="toc-h2 toc-link" data-title="Companies">Companies</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-companies" class="toc-h3 toc-link" data-title="Get all companies">Get all companies</a>
                           </li>
@@ -347,7 +348,7 @@
                   </li>
                   <li>
                     <a href="#sites" class="toc-h2 toc-link" data-title="Sites">Sites</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-sites" class="toc-h3 toc-link" data-title="Get all sites">Get all sites</a>
                           </li>
@@ -367,7 +368,7 @@
                   </li>
                   <li>
                     <a href="#themes" class="toc-h2 toc-link" data-title="Themes">Themes</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-themes" class="toc-h3 toc-link" data-title="Get all themes">Get all themes</a>
                           </li>
@@ -387,7 +388,7 @@
                   </li>
                   <li>
                     <a href="#theme-files" class="toc-h2 toc-link" data-title="Theme files">Theme files</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-theme-files" class="toc-h3 toc-link" data-title="Get all theme files">Get all theme files</a>
                           </li>
@@ -413,7 +414,7 @@
                   </li>
                   <li>
                     <a href="#attachment-folders" class="toc-h2 toc-link" data-title="Attachment Folders">Attachment Folders</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-attachment-folders" class="toc-h3 toc-link" data-title="Get all attachment folders">Get all attachment folders</a>
                           </li>
@@ -433,7 +434,7 @@
                   </li>
                   <li>
                     <a href="#attachment" class="toc-h2 toc-link" data-title="Attachment">Attachment</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-attachments" class="toc-h3 toc-link" data-title="Get all attachments">Get all attachments</a>
                           </li>
@@ -456,7 +457,7 @@
                   </li>
                   <li>
                     <a href="#form-messages" class="toc-h2 toc-link" data-title="Form Messages">Form Messages</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-form-messages" class="toc-h3 toc-link" data-title="Get all form messages">Get all form messages</a>
                           </li>
@@ -470,7 +471,7 @@
                   </li>
                   <li>
                     <a href="#redirects" class="toc-h2 toc-link" data-title="Redirects">Redirects</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-redirects" class="toc-h3 toc-link" data-title="Get all redirects">Get all redirects</a>
                           </li>
@@ -490,7 +491,7 @@
                   </li>
                   <li>
                     <a href="#site-translations" class="toc-h2 toc-link" data-title="Site Translations">Site Translations</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-site-translations" class="toc-h3 toc-link" data-title="Get all site translations">Get all site translations</a>
                           </li>
@@ -504,7 +505,7 @@
                   </li>
                   <li>
                     <a href="#posts" class="toc-h2 toc-link" data-title="Posts">Posts</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-posts" class="toc-h3 toc-link" data-title="Get all posts">Get all posts</a>
                           </li>
@@ -524,7 +525,7 @@
                   </li>
                   <li>
                     <a href="#sections" class="toc-h2 toc-link" data-title="Sections">Sections</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-sections" class="toc-h3 toc-link" data-title="Get all sections">Get all sections</a>
                           </li>
@@ -544,7 +545,7 @@
                   </li>
                   <li>
                     <a href="#rows" class="toc-h2 toc-link" data-title="Rows">Rows</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-rows" class="toc-h3 toc-link" data-title="Get all rows">Get all rows</a>
                           </li>
@@ -564,7 +565,7 @@
                   </li>
                   <li>
                     <a href="#columns" class="toc-h2 toc-link" data-title="Columns">Columns</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-columns" class="toc-h3 toc-link" data-title="Get all columns">Get all columns</a>
                           </li>
@@ -587,7 +588,7 @@
                   </li>
                   <li>
                     <a href="#elements" class="toc-h2 toc-link" data-title="Elements">Elements</a>
-                      <ul class="toc-list-h2">
+                      <ul class="toc-list-h2 toc-list-h3">
                           <li>
                             <a href="#get-all-elements" class="toc-h3 toc-link" data-title="Get all elements">Get all elements</a>
                           </li>
@@ -609,8 +610,8 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://www.startwithplate.com/dashboad'>Go to the Plate Dashboard</a></li>
+            <li><a href='https://www.getplate.com'>About Plate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -658,13 +659,18 @@ companies of the partner with id 1 should be returned.</p>
 <h4 id='query-parameter'>Query parameter</h4>
 
 <p>A Query parameter is one that is appended to the endpoint in the form of a <a href="https://en.wikipedia.org/wiki/Query_string">query string</a>.
-They can be used to convey information about for example <a href="#pagination">pagination</a> #TODO FIX PAGINATION REFERENCE.
+They can be used to convey information about for example <a href="#pagination">pagination</a>
 The endpoint <code>www.startwithplate.com/api/v2/partners/1/companies?pagination_page=3</code>
 contains the Query parameter <code>pagination_page</code> with value <code>3</code>, indicating that
 the third page of the pagination should be returned.</p>
 
-<h4 id='post-put-parameters'>POST/PUT parameters</h4>
-
+<h4 id='post-put-parameters'>POST/PUT parameters</h4><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:{</span><span class="w">
+    </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A new name&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/some/random/path&quot;</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 <p>A POST/PUT parameter is one that is sent in the body of a POST or PUT request.
 Plate requires this body to be structured in <a href="https://www.w3schools.com/js/js_json_syntax.asp">JSON format</a>.
 The description of each endpoint in the <a href="#resources">resources</a> section also describes
@@ -674,21 +680,11 @@ the accepted POST/PUT parameters.</p></p>
 
 <p>The example shown aside, shows how to submit the POST parameters <code>name</code> and <code>path</code>.</p>
 
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"data"</span><span class="p">:{</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A new name"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/some/random/path"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
 <p><h2 id='authentication-and-authorization'>Authentication and Authorization</h2>
 <p>To authenticate a request, it has to be accompanied by authentication details.
 The authentication details consist of 2 parts, a public key and a signature calculated using
 the secret key. If a request is authenticated correctly, it will also be authorized.</p>
-
 <h3 id='integration'>Integration</h3>
-
 <p>To create a key pair (a public and a secret key), you have to create a so-called integration
 in the Plate dashboard. An integration represents an external application that interacts
 with the Plate API. When you create an integration, you are able to create a key pair.</p></p>
@@ -1357,19 +1353,15 @@ info@getplate.com for help.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Constraints</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>name</td>
 <td>The new name for this partner</td>
+<td>String. Not null</td>
 </tr>
-</tbody></table>
-<h4 id='constraints'>Constraints</h4>
-<p>This endpoint has the following constraints:</p></p>
-
-<ul>
-<li>If the parameter <code>name</code> is given, it should have length &gt; 1</li>
-</ul>
+</tbody></table></p>
 
 <p><h2 id='companies'>Companies</h2><h3 id='get-all-companies'>Get all companies</h3>
 <blockquote>
@@ -1560,69 +1552,75 @@ info@getplate.com for help.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Constraints</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>name</td>
 <td>The name for the new company</td>
+<td>String. Not null</td>
 </tr>
 <tr>
 <td>street_name</td>
 <td>The street name for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>street_no</td>
 <td>The street number for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>street_suffix</td>
 <td>The street suffix for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>city</td>
 <td>The city for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>zipcode</td>
 <td>The zipcode for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>country</td>
 <td>The country for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>phone</td>
 <td>The phone number for this company</td>
+<td></td>
 </tr>
 <tr>
 <td>kvk_number</td>
 <td>The <a href="https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/">kvk number</a> for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>vat_number</td>
 <td>The <a href="https://en.wikipedia.org/wiki/VAT_identification_number">vat number</a> for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>invoice_contact_first_name</td>
 <td>The first name for the invoice contact for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>invoice_contact_last_name</td>
 <td>The last name for the invoice contact for the new company</td>
+<td></td>
 </tr>
 <tr>
 <td>invoice_contact_email</td>
 <td>The email address for the invoice contact for the new company</td>
+<td></td>
 </tr>
 </tbody></table>
-
-<h4 id='constraints'>Constraints</h4>
-
-<p>This endpoint has the following constraints:</p>
-
-<ul>
-<li>A parameter <code>name</code> with length &gt; 1 should be given</li>
-</ul>
 
 <h3 id='update-company'>Update company</h3>
 
@@ -1703,17 +1701,17 @@ info@getplate.com for help.</p>
 <tr>
 <td>name</td>
 <td>The new name for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>street_name</td>
 <td>The new street name for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>street_no</td>
 <td>The new street number for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>street_suffix</td>
@@ -1723,17 +1721,17 @@ info@getplate.com for help.</p>
 <tr>
 <td>city</td>
 <td>The new city for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>zipcode</td>
 <td>The new zipcode for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>country</td>
 <td>The new country for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>phone</td>
@@ -1743,38 +1741,29 @@ info@getplate.com for help.</p>
 <tr>
 <td>kvk_number</td>
 <td>The new <a href="https://www.kvk.nl/advies-en-informatie/bedrijf-starten-of-overnemen/kvk-nummer-alles-wat-je-moet-weten/">kvk number</a> for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>vat_number</td>
 <td>The new <a href="https://en.wikipedia.org/wiki/VAT_identification_number">vat number</a> for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>invoice_contact_first_name</td>
 <td>The new first name for the invoice contact for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>invoice_contact_last_name</td>
 <td>The new last name for the invoice contact for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 <tr>
 <td>invoice_contact_email</td>
 <td>The new email address for the invoice contact for this company</td>
-<td>Required.</td>
+<td>Not null.</td>
 </tr>
 </tbody></table>
-
-<h4 id='constraints-2'>Constraints</h4>
-
-<p>This endpoint has the following constraints:</p>
-
-<ul>
-<li>The updated company needs to have a value for all required PUT parameters. So either a
-value was already set, or a new value has to be set through this request.</li>
-</ul>
 
 <h4 id='alternative-endpoints-2'>Alternative endpoints</h4>
 
@@ -1822,7 +1811,7 @@ value was already set, or a new value has to be set through this request.</li>
 </tr>
 </tbody></table>
 
-<h4 id='constraints-3'>Constraints</h4>
+<h4 id='constraints'>Constraints</h4>
 
 <p>This endpoint has the following constraints:</p>
 
