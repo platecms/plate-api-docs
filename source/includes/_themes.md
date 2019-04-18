@@ -107,7 +107,7 @@ Parameter | Description
     "copy_from_theme_id": 1,
     "languages": "nl,de",
     "main_language": "de",
-    "initial_domain": "my-created-theme-example-site"
+    "initial_subdomain": "my-created-theme-example-site"
   }
 }
 ```
@@ -153,7 +153,7 @@ name      | The name of the new theme | Required
 languages | The languages of the new theme | Required. Has to be comma-seperated string of [language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 main_language | The main language of the new theme | Required. Has to be in `languages`
 copy_from_theme_id | The id of the theme that will be installed on the new theme. | Has to correspond to an existing theme
-initial_domain | The subdomain where this theme will be visible | Required. Has to be an url-safe string.
+initial_subdomain | The subdomain where this theme will be visible | Required. Has to be an url-safe string.
 
 
 ### Update theme

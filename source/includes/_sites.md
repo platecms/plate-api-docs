@@ -126,7 +126,7 @@ Alternative endpoints are:
     "main_language": "en",
     "technical_contact_name": "Pieter",
     "technical_contact_email": "pieter@getplate.com",
-    "initial_domain": "my-created-site"
+    "initial_subdomain": "my-created-site"
   }
 }
 ```
