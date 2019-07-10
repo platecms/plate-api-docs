@@ -512,7 +512,7 @@
                     <a href="#posts" class="toc-h2 toc-link" data-title="Posts">Posts</a>
                       <ul class="toc-list-h2 toc-list-h3">
                           <li>
-                            <a href="#get-all-posts" class="toc-h3 toc-link" data-title="Get all posts">Get all posts</a>
+                            <a href="#get-all-postss" class="toc-h3 toc-link" data-title="Get all postss">Get all postss</a>
                           </li>
                           <li>
                             <a href="#get-specific-post" class="toc-h3 toc-link" data-title="Get specific post">Get specific post</a>
@@ -4384,9 +4384,9 @@ no longer exists.</p>
 <li><code>PUT {base_url}/sites/:site_id/site_translations/:id</code></li>
 </ul>
 
-<p><h2 id='posts'>Posts</h2><h3 id='get-all-posts'>Get all posts</h3>
+<p><h2 id='posts'>Posts</h2><h3 id='get-all-postss'>Get all postss</h3>
 <blockquote>
-<p><code>GET {base_url}/site_translations/1/posts/</code> returns JSON structured like this:</p>
+<p><code>GET {base_url}/site_translations/1/posts?post_status=published</code> returns JSON structured like this:</p>
 
 <p></blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -4397,6 +4397,7 @@ no longer exists.</p>
       </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A Post title&quot;</span><span class="p">,</span><span class="w">
         </span><span class="s2">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nl&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;post_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;published&quot;</span><span class="p">,</span><span class="w">
         </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
           </span><span class="err">...</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -4412,6 +4413,7 @@ no longer exists.</p>
       </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Another Post title&quot;</span><span class="p">,</span><span class="w">
         </span><span class="s2">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nl&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;post_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;published&quot;</span><span class="p">,</span><span class="w">
         </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
           </span><span class="err">...</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -4426,7 +4428,7 @@ no longer exists.</p>
 </span></code></pre>
 <p>This endpoint retrieves all posts for a specific site translation</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>GET {base_url}/site_translations/:site_translation_id/posts</code></p>
+<p><code>GET {base_url}/site_translations/:site_translation_id/posts[?post_status=...]</code></p>
 <h4 id='url-parameters'>URL Parameters</h4>
 <table><thead>
 <tr>
@@ -4441,6 +4443,10 @@ no longer exists.</p>
 <tr>
 <td>:site_id</td>
 <td>The id of the site to which the posts belong</td>
+</tr>
+<tr>
+<td>:post_status</td>
+<td>Optional. The post_status of the posts to filter One of &quot;published&quot; and &quot;unpublished&quot;.</td>
 </tr>
 </tbody></table>
 <h4 id='alternative-endpoints'>Alternative endpoints</h4>
@@ -4463,6 +4469,7 @@ no longer exists.</p>
     </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A Post title"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="err">...</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -4522,6 +4529,7 @@ no longer exists.</p>
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">    
     </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Created Post"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unpublished"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -4537,6 +4545,7 @@ no longer exists.</p>
     </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Created Post"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unpublished"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="err">...</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -4594,6 +4603,11 @@ no longer exists.</p>
 <td>Required. Has to be one of the languages of the site of the new post.</td>
 </tr>
 <tr>
+<td>slug</td>
+<td>The slug of the new post</td>
+<td>Optional</td>
+</tr>
+<tr>
 <td>seo_title</td>
 <td>The SEO title of the new post</td>
 <td></td>
@@ -4602,6 +4616,11 @@ no longer exists.</p>
 <td>seo_description</td>
 <td>The SEO description of the new post</td>
 <td></td>
+</tr>
+<tr>
+<td>post_status</td>
+<td>The status of the new post</td>
+<td>Optional. One of &quot;published&quot; or &quot;unpublished&quot;. Default: &quot;published&quot;</td>
 </tr>
 <tr>
 <td></td>
@@ -4619,6 +4638,7 @@ no longer exists.</p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">    
     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An updated post title"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -4634,6 +4654,7 @@ no longer exists.</p>
     </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An updated post title"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unpublished"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="err">...</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -4689,6 +4710,16 @@ no longer exists.</p>
 <td>Not null</td>
 </tr>
 <tr>
+<td>slug</td>
+<td>The slug of the post</td>
+<td>Not null</td>
+</tr>
+<tr>
+<td>post_status</td>
+<td>The status of the new post</td>
+<td>Optional. One of &quot;published&quot; or &quot;unpublished&quot;. Default: &quot;published&quot;</td>
+</tr>
+<tr>
 <td></td>
 <td><strong>--Accepts <a href="#requests-for-content-objects">Content field parameters</a>--</strong></td>
 <td></td>
@@ -4717,6 +4748,7 @@ no longer exists.</p>
     </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A Post title"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nl"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unpublished"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="err">...</span><span class="w">
       </span><span class="p">}</span><span class="w">
