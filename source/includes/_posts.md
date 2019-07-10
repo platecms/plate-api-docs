@@ -1,6 +1,6 @@
 ## Posts
 
-### Get all posts
+### Get all postss
 
 > `GET {base_url}/site_translations/1/posts?post_status=published` returns JSON structured like this:
 
