@@ -164,7 +164,7 @@ Parameter | Description | Constraints
 --------- | ----------- | -----------
 content_type_id | The content type of the new element | Required
  | **--Accepts the position field for [positionable objects](#requests-for-positionable-objects)--** |
- | **--Accepts [Content object parameters](#requests)--** |
+ | **--Accepts [Content object parameters](#requests-for-content-objects)--** |
 
 ### Update element
 
