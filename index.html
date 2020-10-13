@@ -7454,8 +7454,8 @@ Be aware that the `content_type_kinds` parameter is not mandatory in the update 
 None</p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
-length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>
+required: <code>[enabled:boolean]</code>\
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>\
 match: <code>[enabled:boolean, regex_body:string, custom_error:string]</code></p>
 
 <p><strong>Text</strong></p>
@@ -7464,16 +7464,16 @@ match: <code>[enabled:boolean, regex_body:string, custom_error:string]</code></p
 <code>[editor_kind:&quot;html|wysiwyg|none&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Reference</strong></p>
 
 <p><em>Settings:</em>
-[<code>referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</code></p>
+<code>[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Choice</strong></p>
@@ -7482,16 +7482,16 @@ length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, 
 <code>[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Array</strong></p>
 
 <p><em>Settings:</em>
-[array_field_kind:&quot;strings|attachments&quot;]</p>
+<code>[array_field_kind:&quot;strings|attachments&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Media</strong></p>
@@ -7500,14 +7500,14 @@ length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, 
 None</p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 file_types: <code>[enabled:boolean, custom_error:string, allowed_file_types:array]</code>
 filesize: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</code></p>
 
 <p><strong>Datetime</strong></p>
 
 <p><em>Settings:</em>
-[datetime_field_kind:array]</p>
+<code>[datetime_field_kind:array]</code></p>
 
 <aside class="info">
 The possible values for data_time_field_kind are: [date], [time] and [date, time]
@@ -7635,17 +7635,17 @@ required: <code>[enabled:boolean]</code></p>
 None</p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
-length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>
-match: [enabled:boolean, regex_body:string, custom_error:string]</p>
+required: <code>[enabled:boolean]</code>\
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>\
+match: <code>[enabled:boolean, regex_body:string, custom_error:string]</code></p>
 
 <p><strong>Text</strong></p>
 
 <p><em>Settings:</em>
-[editor_kind:&quot;html|wysiwyg|none&quot;]</p>
+<code>[editor_kind:&quot;html|wysiwyg|none&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Reference</strong></p>
@@ -7654,7 +7654,7 @@ length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, 
 <code>[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Choice</strong></p>
@@ -7663,16 +7663,16 @@ length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, 
 <code>[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Array</strong></p>
 
 <p><em>Settings:</em>
-[array_field_kind:&quot;strings|attachments&quot;]</p>
+<code>[array_field_kind:&quot;strings|attachments&quot;]</code></p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
 <p><strong>Media</strong></p>
@@ -7681,7 +7681,7 @@ length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, 
 None</p>
 
 <p><em>Validations:</em>
-required: <code>[enabled:boolean]</code>
+required: <code>[enabled:boolean]</code>\
 file_types: <code>[enabled:boolean, custom_error:string, allowed_file_types:array]</code>
 filesize: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</code></p>
 
