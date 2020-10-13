@@ -611,11 +611,71 @@
                           </li>
                       </ul>
                   </li>
+                  <li>
+                    <a href="#authentication-objects" class="toc-h2 toc-link" data-title="Authentication Objects">Authentication Objects</a>
+                      <ul class="toc-list-h2 toc-list-h3">
+                          <li>
+                            <a href="#get-all-authentication-objects" class="toc-h3 toc-link" data-title="Get all Authentication Objects">Get all Authentication Objects</a>
+                          </li>
+                          <li>
+                            <a href="#get-specific-authentication-object" class="toc-h3 toc-link" data-title="Get specific Authentication Object">Get specific Authentication Object</a>
+                          </li>
+                          <li>
+                            <a href="#create-authentication-object" class="toc-h3 toc-link" data-title="Create Authentication Object">Create Authentication Object</a>
+                          </li>
+                          <li>
+                            <a href="#update-authentication-object" class="toc-h3 toc-link" data-title="Update Authentication Object">Update Authentication Object</a>
+                          </li>
+                          <li>
+                            <a href="#delete-authentication-objects" class="toc-h3 toc-link" data-title="Delete Authentication Objects">Delete Authentication Objects</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#content-type" class="toc-h2 toc-link" data-title="Content Type">Content Type</a>
+                      <ul class="toc-list-h2 toc-list-h3">
+                          <li>
+                            <a href="#get-all-content-types" class="toc-h3 toc-link" data-title="Get all Content Types">Get all Content Types</a>
+                          </li>
+                          <li>
+                            <a href="#get-specific-content-type" class="toc-h3 toc-link" data-title="Get specific Content Type">Get specific Content Type</a>
+                          </li>
+                          <li>
+                            <a href="#create-content-type" class="toc-h3 toc-link" data-title="Create Content Type">Create Content Type</a>
+                          </li>
+                          <li>
+                            <a href="#update-content-type" class="toc-h3 toc-link" data-title="Update Content Type">Update Content Type</a>
+                          </li>
+                          <li>
+                            <a href="#delete-content-type" class="toc-h3 toc-link" data-title="Delete Content Type">Delete Content Type</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#content-field" class="toc-h2 toc-link" data-title="Content Field">Content Field</a>
+                      <ul class="toc-list-h2 toc-list-h3">
+                          <li>
+                            <a href="#get-all-content-fields" class="toc-h3 toc-link" data-title="Get all content fields">Get all content fields</a>
+                          </li>
+                          <li>
+                            <a href="#get-specific-content-field" class="toc-h3 toc-link" data-title="Get specific Content Field">Get specific Content Field</a>
+                          </li>
+                          <li>
+                            <a href="#create-content-field" class="toc-h3 toc-link" data-title="Create Content Field">Create Content Field</a>
+                          </li>
+                          <li>
+                            <a href="#update-content-field" class="toc-h3 toc-link" data-title="Update Content Field">Update Content Field</a>
+                          </li>
+                          <li>
+                            <a href="#delete-content-field" class="toc-h3 toc-link" data-title="Delete Content Field">Delete Content Field</a>
+                          </li>
+                      </ul>
+                  </li>
               </ul>
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://www.startwithplate.com/dashboad'>Go to the Plate Dashboard</a></li>
+            <li><a href='https://www.startwithplate.com/dashboard'>Go to the Plate Dashboard</a></li>
             <li><a href='https://www.getplate.com'>About Plate</a></li>
         </ul>
     </div>
@@ -3472,11 +3532,7 @@ principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1
 </thead><tbody>
 <tr>
 <td>:site_id</td>
-<td>The id of the site to which the new theme_file belongs</td>
-</tr>
-<tr>
-<td>:theme_id</td>
-<td>The id of the theme to which the new theme_file belongs</td>
+<td>The id of the site to which the new attachment belongs</td>
 </tr>
 </tbody></table>
 
@@ -3516,7 +3572,7 @@ principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">    
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A new attachment_title"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -3543,7 +3599,7 @@ principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p>This endpoint updates a site.</p>
+<p>This endpoint updates an attachment.</p>
 
 <h4 id='http-request-5'>HTTP Request</h4>
 
@@ -4526,7 +4582,7 @@ no longer exists.</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">    
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Created Post"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unpublished"</span><span class="w">
@@ -4636,7 +4692,7 @@ no longer exists.</p>
 </blockquote>
 
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">    
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An updated post title"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"post_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="w">
   </span><span class="p">}</span><span class="w">
@@ -6247,7 +6303,7 @@ no longer exists.</p>
 </tr>
 <tr>
 <td></td>
-<td><strong>--Accepts <a href="#requests">Content object parameters</a>--</strong></td>
+<td><strong>--Accepts <a href="#requests-for-content-objects">Content object parameters</a>--</strong></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -6396,6 +6452,1303 @@ no longer exists.</p>
 <li><code>DELETE {base_url}/sections/:section_id/elements/:id</code></li>
 <li><code>DELETE {base_url}/rows/:row_id/elements/:id</code></li>
 <li><code>DELETE {base_url}/columns/:column_id/elements/:id</code></li>
+</ul>
+
+<p><h2 id='authentication-objects'>Authentication Objects</h2><h3 id='get-all-authentication-objects'>Get all Authentication Objects</h3>
+<blockquote>
+<p><code>GET {base_url}/site/1/authentication_objects</code> returns JSON structured like this:</p>
+
+<p></blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;authentication_objects&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;reset_password_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;confirmed_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;confirmation_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;unconfirmed_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">...</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content_type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;authentication_objects&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;reset_password_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;confirmed_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;confirmation_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;unconfirmed_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="err">...</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content_type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all Authentication Objects for a specific site translation</p>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>GET {base_url}/sites/:site_id/authentication_objects</code></p>
+<h4 id='url-parameters'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site to which the authentication objects belong</td>
+</tr>
+</tbody></table>
+<h3 id='get-specific-authentication-object'>Get specific Authentication Object</h3>
+<blockquote>
+<p><code>GET {base_url}/sites/1/authentication_objects/4</code> returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;authentication_objects&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;reset_password_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;confirmed_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;confirmation_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;unconfirmed_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content_type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific Authentication Object.</p>
+<h4 id='http-request-2'>HTTP Request</h4>
+<p><code>GET {base_url}/sites/:site_id/authentication_objects/:id</code></p>
+<h4 id='url-parameters-2'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the authentication object to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the authentication object to retrieve</td>
+</tr>
+</tbody></table>
+<h3 id='create-authentication-object'>Create Authentication Object</h3>
+<blockquote>
+<p>An example of valid JSON POST parameters</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;invite_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;without_password&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;content_type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p><code>POST {base_url}/sites/1/authentication_objects</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;authentication_objects&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;reset_password_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;confirmed_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;confirmation_sent_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-13 12:49:39 +0000&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;unconfirmed_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content_type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates an Authentication Object.</p>
+<h4 id='http-request-3'>HTTP Request</h4>
+<p><code>POST {base_url}/sites/:site_id/authentication_objects</code></p>
+<h4 id='url-parameters-3'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site translation to which the new Authentication Object belongs</td>
+</tr>
+</tbody></table>
+<h4 id='post-parameters'>POST Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>content_type_id</td>
+<td>The content type of the new authentication object</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The email of the new authentication object</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>invite_type</td>
+<td>The type of invitation for the user</td>
+<td>Null or &#39;without_password&#39;</td>
+</tr>
+<tr>
+<td>password</td>
+<td>The password for the user</td>
+<td>Required if invite_type is not &#39;without_password&#39;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>--Accepts <a href="#requests-for-content-objects">Content field parameters</a>--</strong></td>
+<td></td>
+</tr>
+</tbody></table></p></p>
+
+<aside class="info">
+If invite_type is 'without_password', the person logging in with the authentication object for the first time (by clicking the link in the email) will have to set a password.
+</aside>
+
+<h3 id='update-authentication-object'>Update Authentication Object</h3>
+
+<blockquote>
+<p>An example of valid JSON PUT parameters</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new-email@test.com"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p><code>PUT {base_url}/sites/1/authentication_objects/3</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authentication_objects"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@email.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reset_password_sent_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"confirmed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-13 12:49:39 +0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"confirmation_sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-13 12:49:39 +0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unconfirmed_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new-email@test.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint updates an Authentication Object.</p>
+
+<aside class="info">
+Note that changing the email will not immediately change the `email` value, but rather fill the `unconfirmed_email` field. The new email will receive an email with a confirmation link, that changes the values.
+</aside>
+
+<h4 id='http-request-4'>HTTP Request</h4>
+
+<p><code>PUT {base_url}/sites/:site_id/authentication_objects/:id</code></p>
+
+<h4 id='url-parameters-4'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the authentication object to update</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the authentication object to update</td>
+</tr>
+</tbody></table>
+
+<h4 id='put-parameters'>PUT Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>The email of the new authentication object</td>
+<td>Required</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>--Accepts <a href="#requests-for-content-objects">Content field parameters</a>--</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h3 id='delete-authentication-objects'>Delete Authentication Objects</h3>
+
+<blockquote>
+<p><code>DELETE {base_url}/sites/1/authentiation_objects/3</code> returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authentication_objects"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@email.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reset_password_sent_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"confirmed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-13 12:49:39 +0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"confirmation_sent_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-13 12:49:39 +0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unconfirmed_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint deletes a specific Authentication Object.</p>
+
+<h4 id='http-request-5'>HTTP Request</h4>
+
+<p><code>DELETE {base_url}/authentication_objects/:id</code></p>
+
+<h4 id='url-parameters-5'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the authentication object to delete</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the authentication object to delete</td>
+</tr>
+</tbody></table>
+
+<p><h2 id='content-type'>Content Type</h2><h3 id='get-all-content-types'>Get all Content Types</h3>
+<blockquote>
+<p><code>GET {base_url}/sites/1/content_types/</code> returns JSON structured like this:</p>
+
+<p></blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;content_types&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;menu_item&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Menu Item&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;menu_items&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Menu Items&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;icon&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;55&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;content_types&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Review&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;56&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span><span class="w">
+            </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+            </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="w"> </span><span class="p">},</span><span class="w">
+              </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9998</span><span class="w"> </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all content_types for a specific site</p>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>GET {base_url}/sites/:site_id/content_types</code></p>
+<h4 id='url-parameters'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site to which the content types belong</td>
+</tr>
+</tbody></table>
+<h3 id='get-specific-content-type'>Get specific Content Type</h3>
+<blockquote>
+<p><code>GET {base_url}/sites/1/content_types/3</code> returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;content_types&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Review&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;56&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="w"> </span><span class="p">},</span><span class="w">
+            </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9998</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves information about a specific content type. It also contains the content type different content type kinds, which can be one or multiple of these:
+- abstract_content_type
+- post_type (contains extra localization settings)
+- section_type
+- element_type
+- tray_type
+- authentication_type</p>
+<h4 id='http-request-2'>HTTP Request</h4>
+<p><code>GET {base_url}/sites/1/content_types/3</code></p>
+<h4 id='url-parameters-2'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the content_type to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the content_type to retrieve</td>
+</tr>
+</tbody></table>
+<h3 id='create-content-type'>Create Content Type</h3>
+<blockquote>
+<p>An example of valid JSON POST parameters</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Review&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p><code>POST {base_url}/sites/1/content_types</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;content_types&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Review&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;56&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="w"> </span><span class="p">},</span><span class="w">
+            </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9998</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='http-request-3'>HTTP Request</h4>
+<p><code>POST {base_url}/sites/:site_id/content_types</code></p>
+<h4 id='url-parameters-3'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site to which the new Content Type belongs</td>
+</tr>
+</tbody></table>
+<h4 id='post-parameters'>POST Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The identifying name of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The title of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>plural_name</td>
+<td>The identifying plural name of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>plural_title</td>
+<td>The plural title of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>icon_name</td>
+<td>The Icon name for the new Content Type</td>
+<td></td>
+</tr>
+<tr>
+<td>content_type_kinds</td>
+<td>Array of JSON objects to create content_type kinds for the Content Type</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='update-content-type'>Update Content Type</h3>
+<blockquote>
+<p>An example of valid JSON PUT parameters</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Beoordeling&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Beoordelingen&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+        </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p><code>PUT {base_url}/sites/1/content_types/5</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;content_types&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="s2">&quot;attributes&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Beoordeling&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;plural_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Beoordelingen&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;icon_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;review_icon&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="s2">&quot;content_type_kinds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;56&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abstract_content_type&quot;</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;post_type&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s2">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reviews&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="w"> </span><span class="p">},</span><span class="w">
+            </span><span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beoordelingen&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index_post_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9998</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">&quot;relations&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint updates a Content Type.</p>
+<h4 id='http-request-4'>HTTP Request</h4>
+<p><code>PUT {base_url}/sites/:site_id/content_types/:id</code></p>
+<h4 id='url-parameters-4'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the Content Type to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the Content Type to retrieve</td>
+</tr>
+</tbody></table>
+<h4 id='put-parameters'>PUT Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The identifying name of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The title of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>plural_name</td>
+<td>The identifying plural name of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>plural_title</td>
+<td>The plural title of the new Content Type</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>icon_name</td>
+<td>The Icon name for the new Content Type</td>
+<td></td>
+</tr>
+<tr>
+<td>content_type_kinds</td>
+<td>Array of JSON objects to create content_type kinds for the Content Type</td>
+<td>If present, needs to represent all kinds</td>
+</tr>
+</tbody></table></p></p>
+
+<aside class="warning">
+Be aware that the `content_type_kinds` parameter is not mandatory in the update action. However, when it is present, it needs to represent *all content type kinds* currently inside the content_type. If one or more are omitted, the api call will delete these.
+</aside>
+
+<h3 id='delete-content-type'>Delete Content Type</h3>
+
+<blockquote>
+<p><code>DELETE {base_url}/sites/1/content_types/5</code> returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content_types"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"review"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beoordeling"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"plural_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reviews"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"plural_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beoordelingen"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"icon_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"review_icon"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_kinds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"56"</span><span class="p">,</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abstract_content_type"</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post_type"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reviews"</span><span class="p">,</span><span class="w"> </span><span class="s2">"index_post_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="w"> </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"nl"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"beoordelingen"</span><span class="p">,</span><span class="w"> </span><span class="s2">"index_post_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9998</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint deletes a specific Content Type.</p>
+
+<h4 id='http-request-5'>HTTP Request</h4>
+
+<p><code>DELETE {base_url}/sites/:site_id/content_types/:id</code></p>
+
+<h4 id='url-parameters-5'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the Content Type to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the Content Type to retrieve</td>
+</tr>
+</tbody></table>
+
+<p><h2 id='content-field'>Content Field</h2><h3 id='get-all-content-fields'>Get all content fields</h3>
+<blockquote>
+<p><code>GET {base_url}/sites/1/content_fields/</code> returns JSON structured like this:
+<code>json
+{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 3,
+      &quot;type&quot;: &quot;content_fields&quot;,
+      &quot;attributes&quot; : {
+        &quot;title&quot;: &quot;Selected images&quot;,
+        &quot;name&quot;: &quot;selected_images&quot;,
+        &quot;field_type&quot;: &quot;array&quot;,
+        &quot;settings&quot;: { &quot;array_field_kind&quot;: &quot;attachments&quot; },
+        &quot;validations&quot;: {
+          &quot;required&quot;: {&quot;enabled&quot;: true},
+          &quot;length&quot;: {&quot;enabled&quot;: true, &quot;min&quot;: 2, &quot;max&quot;: 10, &quot;range_handler&quot;: &quot;between&quot;},
+        }
+      },
+      &quot;relations&quot; : {
+        &quot;site_id&quot;: 1,
+        &quot;content_type_id&quot;: 10
+      }
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;type&quot;: &quot;content_fields&quot;,
+      &quot;attributes&quot; : {
+        &quot;title&quot;: &quot;Authors&quot;,
+        &quot;name&quot;: &quot;authors&quot;,
+        &quot;field_type&quot;: &quot;reference&quot;,
+        &quot;settings&quot;: {
+          &quot;referenced_content_type_kind_id&quot;: 9876,
+          &quot;referenced_title_field&quot;: &quot;name&quot;,
+          &quot;context&quot;: &quot;global&quot;
+        },
+        &quot;validations&quot;: {
+          &quot;required&quot;: {&quot;enabled&quot;: false},
+          &quot;length&quot;: {&quot;enabled&quot;: false},
+        }
+      },
+      &quot;relations&quot; : {
+        &quot;site_id&quot;: 1,
+        &quot;content_type_id&quot;: 10
+      }
+    }
+  ]
+}
+</code></p>
+
+<p></blockquote></p></p>
+
+<p>This endpoint retrieves all Content Fields for a specific site</p>
+
+<h4 id='http-request'>HTTP Request</h4>
+
+<p><code>GET {base_url}/sites/:site_id/content_fields</code></p>
+
+<h4 id='url-parameters'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site to which the content fields belong</td>
+</tr>
+</tbody></table>
+
+<h4 id='alternative-endpoints'>Alternative endpoints</h4>
+
+<p>Alternative endpoints are:</p>
+
+<ul>
+<li><code>GET {base_url}/content_types/:content_type_id/content_fields</code> (Gives all Content Fields for a certain Content Type)</li>
+</ul>
+
+<h3 id='get-specific-content-field'>Get specific Content Field</h3>
+
+<blockquote>
+<p><code>GET {base_url}/sites/1/content_fields/4</code> returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content_fields"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint retrieves information about a specific Content Field.</p>
+
+<h4 id='http-request-2'>HTTP Request</h4>
+
+<p><code>GET {base_url}/sites/:site_id/content_fields/:id</code></p>
+
+<h4 id='url-parameters-2'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the Content Field to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the Content Field to retrieve</td>
+</tr>
+<tr>
+<td>:content_type_id</td>
+<td>The id of the Content Type to which the Content Field belongs (optional)</td>
+</tr>
+</tbody></table>
+
+<h4 id='alternative-endpoints-2'>Alternative endpoints</h4>
+
+<p>Alternative endpoints are:</p>
+
+<ul>
+<li><code>GET {base_url}/content_types/:content_type_id/content_fields/:id</code></li>
+</ul>
+
+<h3 id='create-content-field'>Create Content Field</h3>
+
+<blockquote>
+<p>An example of valid JSON POST parameters</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+      </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"max"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"range_handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"between"</span><span class="p">},</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p><code>POST {base_url}/content_types/123/content_fields</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content_fields"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"max"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"range_handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"between"</span><span class="p">},</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='http-request-3'>HTTP Request</h4>
+<p><code>POST {base_url}/content_types/:content_type_id/content_fields</code></p>
+<h4 id='url-parameters-3'>URL Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:content_type_id</td>
+<td>The id of the Content Type to which the new Content Field belongs</td>
+</tr>
+</tbody></table>
+<h4 id='post-parameters'>POST Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The identifying name of the new Content Field</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The title of the new Content Field</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>field_type</td>
+<td>The identifying plural name of the new Content Field</td>
+<td>Must be one of available field_types</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>The field settings for the new Content Field</td>
+<td>Must be settings JSON based on specific field_type</td>
+</tr>
+<tr>
+<td>validations</td>
+<td>Validation settings for Content Field</td>
+<td>Must be json based on specific field_type</td>
+</tr>
+</tbody></table>
+
+<p>The following field_types are available (along with corresponding settings and validations json keys)</p>
+<h5 id='string'>String</h5>
+<p><strong>Settings:</strong>
+None</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+match: [enabled:boolean, regex_body:string, custom_error:string]</p>
+<h5 id='text'>Text</h5>
+<p><strong>Settings:</strong>
+[editor_kind:&quot;html|wysiwyg|none&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<h5 id='reference'>Reference</h5>
+<p><strong>Settings:</strong>
+[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<h5 id='choice'>Choice</h5>
+<p><strong>Settings:</strong>
+[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<h5 id='array'>Array</h5>
+<p><strong>Settings:</strong>
+[array_field_kind:&quot;strings|attachments&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<h5 id='media'>Media</h5>
+<p><strong>Settings:</strong>
+None</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
+filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</p>
+<h5 id='datetime'>Datetime</h5>
+<p><strong>Settings:</strong>
+[datetime_field_kind:array]</p>
+
+<aside class="info">
+The possible values for data_time_field_kind are: [date], [time] and [date, time]
+</aside>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]</p>
+<h3 id='update-content-field'>Update Content Field</h3>
+<blockquote>
+<p>An example of valid JSON PUT parameters</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+      </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"max"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"range_handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"between"</span><span class="p">},</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p><code>PUT {base_url}/content_types/123/content_fields/4</code> with the above parameters returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content_fields"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"max"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"range_handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"between"</span><span class="p">},</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint updates a Content Field.</p>
+
+<h4 id='http-request-4'>HTTP Request</h4>
+
+<p><code>PUT {base_url}/content_types/:content_type_id/content_fields/:id</code></p>
+
+<h4 id='url-parameters-4'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:content_type_id</td>
+<td>The id of the Content Type of the Content Field to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the Content Field to retrieve</td>
+</tr>
+</tbody></table>
+
+<h4 id='put-parameters'>PUT Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Constraints</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The identifying name of the new Content Field</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The title of the new Content Field</td>
+<td>Not null.</td>
+</tr>
+<tr>
+<td>field_type</td>
+<td>The identifying plural name of the new Content Field</td>
+<td>Must be one of available field_types</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>The field settings for the new Content Field</td>
+<td>Must be settings JSON based on specific field_type</td>
+</tr>
+<tr>
+<td>validations</td>
+<td>Validation settings for Content Field</td>
+<td>Must be json based on specific field_type</td>
+</tr>
+</tbody></table>
+
+<p>The following field_types are available (along with corresponding settings and validations json keys)</p>
+
+<h5 id='string-2'>String</h5>
+
+<p><strong>Settings:</strong>
+None</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+match: [enabled:boolean, regex_body:string, custom_error:string]</p>
+
+<h5 id='text-2'>Text</h5>
+
+<p><strong>Settings:</strong>
+[editor_kind:&quot;html|wysiwyg|none&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+
+<h5 id='reference-2'>Reference</h5>
+
+<p><strong>Settings:</strong>
+[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+
+<h5 id='choice-2'>Choice</h5>
+
+<p><strong>Settings:</strong>
+[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+
+<h5 id='array-2'>Array</h5>
+
+<p><strong>Settings:</strong>
+[array_field_kind:&quot;strings|attachments&quot;]</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+
+<h5 id='media-2'>Media</h5>
+
+<p><strong>Settings:</strong>
+None</p>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]
+file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
+filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</p>
+
+<h5 id='datetime-2'>Datetime</h5>
+
+<p><strong>Settings:</strong>
+[datetime_field_kind:array]</p>
+
+<aside class="info">
+The possible values for data_time_field_kind are: [date], [time] and [date, time]
+</aside>
+
+<p><strong>Validations:</strong>
+required: [enabled:boolean]</p>
+
+<h3 id='delete-content-field'>Delete Content Field</h3>
+
+<blockquote>
+<p><code>DELETE {base_url}/sites/1/content_fields/4</code> returns JSON structured like this:</p>
+</blockquote>
+
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content_fields"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"authors"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"field_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"referenced_content_type_kind_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9876</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"referenced_title_field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"global"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relations"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"content_type_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint deletes a specific Content Field.</p>
+
+<h4 id='http-request-5'>HTTP Request</h4>
+
+<p><code>DELETE {base_url}/sites/:site_id/content_fields/:id</code></p>
+
+<h4 id='url-parameters-5'>URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:site_id</td>
+<td>The id of the site of the Content Field to retrieve</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>The id of the Content Field to retrieve</td>
+</tr>
+<tr>
+<td>:content_type_id</td>
+<td>The id of the Content Type to which the Content Field belongs (optional)</td>
+</tr>
+</tbody></table>
+
+<h4 id='alternative-endpoints-3'>Alternative endpoints</h4>
+
+<p>Alternative endpoints are:</p>
+
+<ul>
+<li><code>DELETE {base_url}/content_types/:content_type_id/content_fields/:id</code></li>
 </ul>
 
       </div>
