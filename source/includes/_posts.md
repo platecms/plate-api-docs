@@ -1,6 +1,6 @@
 ## Posts
 
-### Get all postss
+### Get all posts
 
 > `GET {base_url}/site_translations/1/posts?post_status=published` returns JSON structured like this:
 
@@ -115,7 +115,7 @@ Alternative endpoints are:
 
 ```json
 {
-  "data": {    
+  "data": {
     "content_type_id": 14,
     "title": "Created Post",
     "post_status": "unpublished"
@@ -177,7 +177,7 @@ post_status  | The status of the new post | Optional. One of "published" or "unp
 
 ```json
 {
-  "data": {    
+  "data": {
     "title": "An updated post title",
     "post_status": "published"
   }

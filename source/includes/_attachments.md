@@ -186,8 +186,7 @@ principle as defined in <a href="https://tools.ietf.org/html/rfc7578#section-4.1
 
 Parameter | Description
 --------- | -----------
-:site_id | The id of the site to which the new theme_file belongs
-:theme_id | The id of the theme to which the new theme_file belongs
+:site_id | The id of the site to which the new attachment belongs
 
 #### POST Parameters
 
@@ -209,7 +208,7 @@ Alternative endpoints are:
 
 ```json
 {
-  "data": {    
+  "data": {
     "title": "A new attachment_title"
   }
 }
@@ -235,7 +234,7 @@ Alternative endpoints are:
 }
 ```
 
-This endpoint updates a site.
+This endpoint updates an attachment.
 
 #### HTTP Request
 
