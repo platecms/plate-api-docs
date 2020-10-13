@@ -195,73 +195,73 @@ validations | Validation settings for Content Field | Must be json based on spec
 
 The following field_types are available (along with corresponding settings and validations json keys)
 
-##### String
+**String**
 
-**Settings:**
+_Settings:_
 None
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
-match: [enabled:boolean, regex_body:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
+match: `[enabled:boolean, regex_body:string, custom_error:string]`
 
-##### Text
+**Text**
 
-**Settings:**
-[editor_kind:"html|wysiwyg|none"]
+_Settings:_
+`[editor_kind:"html|wysiwyg|none"]`
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Reference
+**Reference**
 
-**Settings:**
-[referenced_content_type_kind_id:integer, referenced_title_field:string, context:"local|global"]
+_Settings:_
+[`referenced_content_type_kind_id:integer, referenced_title_field:string, context:"local|global"]`
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Choice
+**Choice**
 
-**Settings:**
-[choice_field_kind:"radio|checkbox|dropdown|toggle", predefined_values:array]
+_Settings:_
+`[choice_field_kind:"radio|checkbox|dropdown|toggle", predefined_values:array]`
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Array
+**Array**
 
-**Settings:**
+_Settings:_
 [array_field_kind:"strings|attachments"]
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Media
+**Media**
 
-**Settings:**
+_Settings:_
 None
 
-**Validations:**
-required: [enabled:boolean]
-file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
-filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:"mb|kb", max_filesize_unit:"mb|kb"]
+_Validations:_
+required: `[enabled:boolean]`
+file_types: `[enabled:boolean, custom_error:string, allowed_file_types:array]`
+filesize: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:"mb|kb", max_filesize_unit:"mb|kb"]`
 
-##### Datetime
+**Datetime**
 
-**Settings:**
+_Settings:_
 [datetime_field_kind:array]
 
 <aside class="info">
 The possible values for data_time_field_kind are: [date], [time] and [date, time]
 </aside>
 
-**Validations:**
-required: [enabled:boolean]
+_Validations:_
+required: `[enabled:boolean]`
 
 
 ### Update Content Field
@@ -341,73 +341,73 @@ validations | Validation settings for Content Field | Must be json based on spec
 
 The following field_types are available (along with corresponding settings and validations json keys)
 
-##### String
+**String**
 
-**Settings:**
+_Settings:_
 None
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 match: [enabled:boolean, regex_body:string, custom_error:string]
 
-##### Text
+**Text**
 
-**Settings:**
+_Settings:_
 [editor_kind:"html|wysiwyg|none"]
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Reference
+**Reference**
 
-**Settings:**
-[referenced_content_type_kind_id:integer, referenced_title_field:string, context:"local|global"]
+_Settings:_
+`[referenced_content_type_kind_id:integer, referenced_title_field:string, context:"local|global"]`
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Choice
+**Choice**
 
-**Settings:**
-[choice_field_kind:"radio|checkbox|dropdown|toggle", predefined_values:array]
+_Settings:_
+`[choice_field_kind:"radio|checkbox|dropdown|toggle", predefined_values:array]`
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Array
+**Array**
 
-**Settings:**
+_Settings:_
 [array_field_kind:"strings|attachments"]
 
-**Validations:**
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+_Validations:_
+required: `[enabled:boolean]`
+length: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]`
 
-##### Media
+**Media**
 
-**Settings:**
+_Settings:_
 None
 
-**Validations:**
-required: [enabled:boolean]
-file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
-filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:"mb|kb", max_filesize_unit:"mb|kb"]
+_Validations:_
+required: `[enabled:boolean]`
+file_types: `[enabled:boolean, custom_error:string, allowed_file_types:array]`
+filesize: `[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:"mb|kb", max_filesize_unit:"mb|kb"]`
 
-##### Datetime
+**Datetime**
 
-**Settings:**
+_Settings:_
 [datetime_field_kind:array]
 
 <aside class="info">
 The possible values for data_time_field_kind are: [date], [time] and [date, time]
 </aside>
 
-**Validations:**
-required: [enabled:boolean]
+_Validations:_
+required: `[enabled:boolean]`
 
 
 ### Delete Content Field
