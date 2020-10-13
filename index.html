@@ -7447,60 +7447,74 @@ Be aware that the `content_type_kinds` parameter is not mandatory in the update 
 </tbody></table>
 
 <p>The following field_types are available (along with corresponding settings and validations json keys)</p>
-<h5 id='string'>String</h5>
-<p><strong>Settings:</strong>
+
+<p><strong>String</strong></p>
+
+<p><em>Settings:</em>
 None</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
-match: [enabled:boolean, regex_body:string, custom_error:string]</p>
-<h5 id='text'>Text</h5>
-<p><strong>Settings:</strong>
-[editor_kind:&quot;html|wysiwyg|none&quot;]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>
+match: <code>[enabled:boolean, regex_body:string, custom_error:string]</code></p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
-<h5 id='reference'>Reference</h5>
-<p><strong>Settings:</strong>
-[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</p>
+<p><strong>Text</strong></p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
-<h5 id='choice'>Choice</h5>
-<p><strong>Settings:</strong>
-[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</p>
+<p><em>Settings:</em>
+<code>[editor_kind:&quot;html|wysiwyg|none&quot;]</code></p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
-<h5 id='array'>Array</h5>
-<p><strong>Settings:</strong>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
+
+<p><strong>Reference</strong></p>
+
+<p><em>Settings:</em>
+[<code>referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</code></p>
+
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
+
+<p><strong>Choice</strong></p>
+
+<p><em>Settings:</em>
+<code>[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</code></p>
+
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
+
+<p><strong>Array</strong></p>
+
+<p><em>Settings:</em>
 [array_field_kind:&quot;strings|attachments&quot;]</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
-<h5 id='media'>Media</h5>
-<p><strong>Settings:</strong>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
+
+<p><strong>Media</strong></p>
+
+<p><em>Settings:</em>
 None</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
-filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</p>
-<h5 id='datetime'>Datetime</h5>
-<p><strong>Settings:</strong>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+file_types: <code>[enabled:boolean, custom_error:string, allowed_file_types:array]</code>
+filesize: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</code></p>
+
+<p><strong>Datetime</strong></p>
+
+<p><em>Settings:</em>
 [datetime_field_kind:array]</p>
 
 <aside class="info">
 The possible values for data_time_field_kind are: [date], [time] and [date, time]
 </aside>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code></p>
 <h3 id='update-content-field'>Update Content Field</h3>
 <blockquote>
 <p>An example of valid JSON PUT parameters</p>
@@ -7615,73 +7629,73 @@ required: [enabled:boolean]</p>
 
 <p>The following field_types are available (along with corresponding settings and validations json keys)</p>
 
-<h5 id='string-2'>String</h5>
+<p><strong>String</strong></p>
 
-<p><strong>Settings:</strong>
+<p><em>Settings:</em>
 None</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code>
 match: [enabled:boolean, regex_body:string, custom_error:string]</p>
 
-<h5 id='text-2'>Text</h5>
+<p><strong>Text</strong></p>
 
-<p><strong>Settings:</strong>
+<p><em>Settings:</em>
 [editor_kind:&quot;html|wysiwyg|none&quot;]</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
-<h5 id='reference-2'>Reference</h5>
+<p><strong>Reference</strong></p>
 
-<p><strong>Settings:</strong>
-[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</p>
+<p><em>Settings:</em>
+<code>[referenced_content_type_kind_id:integer, referenced_title_field:string, context:&quot;local|global&quot;]</code></p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
-<h5 id='choice-2'>Choice</h5>
+<p><strong>Choice</strong></p>
 
-<p><strong>Settings:</strong>
-[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</p>
+<p><em>Settings:</em>
+<code>[choice_field_kind:&quot;radio|checkbox|dropdown|toggle&quot;, predefined_values:array]</code></p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
-<h5 id='array-2'>Array</h5>
+<p><strong>Array</strong></p>
 
-<p><strong>Settings:</strong>
+<p><em>Settings:</em>
 [array_field_kind:&quot;strings|attachments&quot;]</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-length: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+length: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string]</code></p>
 
-<h5 id='media-2'>Media</h5>
+<p><strong>Media</strong></p>
 
-<p><strong>Settings:</strong>
+<p><em>Settings:</em>
 None</p>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]
-file_types: [enabled:boolean, custom_error:string, allowed_file_types:array]
-filesize: [enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code>
+file_types: <code>[enabled:boolean, custom_error:string, allowed_file_types:array]</code>
+filesize: <code>[enabled:boolean, min:integer, max:integer, range_handler:string, custom_error:string, min_filesize_unit:&quot;mb|kb&quot;, max_filesize_unit:&quot;mb|kb&quot;]</code></p>
 
-<h5 id='datetime-2'>Datetime</h5>
+<p><strong>Datetime</strong></p>
 
-<p><strong>Settings:</strong>
+<p><em>Settings:</em>
 [datetime_field_kind:array]</p>
 
 <aside class="info">
 The possible values for data_time_field_kind are: [date], [time] and [date, time]
 </aside>
 
-<p><strong>Validations:</strong>
-required: [enabled:boolean]</p>
+<p><em>Validations:</em>
+required: <code>[enabled:boolean]</code></p>
 
 <h3 id='delete-content-field'>Delete Content Field</h3>
 
