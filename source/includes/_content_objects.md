@@ -1,4 +1,4 @@
-## ContentObjects
+## Content Objects
 
 ### Get all content_objects
 
