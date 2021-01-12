@@ -23,3 +23,6 @@ _yardoc
 doc/
 .idea/
 git_stats/
+
+# Vagrant artifacts
+ubuntu-*-console.log
