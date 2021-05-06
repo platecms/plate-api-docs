@@ -164,7 +164,7 @@ Parameter | Description | Constraints
 --------- | ----------- | -----------
 content_type_id | The content type of the new post | Required
 title     | The title of the new post | Required
-language  | The language of the new post | Required. Has to be one of the languages of the site of the new post.
+language  | The language of the new post | Has to be one of the languages of the site of the new post.
 slug  | The slug of the new post | Optional
 seo_title | The SEO title of the new post |
 seo_description | The SEO description of the new post |
