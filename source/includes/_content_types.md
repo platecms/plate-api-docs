@@ -110,7 +110,7 @@ This endpoint retrieves information about a specific content type. It also conta
 
 #### HTTP Request
 
-`GET {base_url}/sites/1/content_types/3`
+`GET {base_url}/sites/:site_id/content_types/:id`
 
 #### URL Parameters
 
