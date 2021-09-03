@@ -3,6 +3,7 @@
 ### Get all content fields
 
 > `GET {base_url}/sites/1/content_fields/` returns JSON structured like this:
+
 ```json
 {
   "data": [
