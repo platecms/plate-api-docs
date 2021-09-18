@@ -1,6 +1,6 @@
 ## Content Field
 
-### Get all content fields
+### Get all Content Fields
 
 > `GET {base_url}/sites/1/content_fields/` returns JSON structured like this:
 
