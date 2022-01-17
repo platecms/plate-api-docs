@@ -59,6 +59,12 @@ Parameter | Description
 --------- | -----------
 :site_id | The id of the site to which the authentication objects belong
 
+#### Query Parameters
+
+Parameter | Description
+--------- | -----------
+:email | The email to filter authentication objects on.
+
 
 ### Get specific Authentication Object
 
