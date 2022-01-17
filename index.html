@@ -402,6 +402,9 @@
                           </li>
                       </ul>
                   </li>
+                  <li>
+                    <a href="#filtering" class="toc-h2 toc-link" data-title="Filtering">Filtering</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -1448,6 +1451,18 @@ most 50. (At t=4, the total count in the previous 5 seconds is 48, at t=5, 49, a
 
 <p>An error occurred while executing your request. Please try again later, or contact
 info@getplate.com for help.</p>
+
+<p><h2 id='filtering'>Filtering</h2>
+<p>To allow for efficient retrieval of a specific set of objects, the Plate API
+allows to filter Index endpoints based on id. This way you can retrieve <code>n</code>
+specified objects in one request, instead of making <code>n</code> requests.</p></p>
+
+<p>This is done by adding a query parameter <code>id[]={id_value}</code> for each object you 
+want to retrieve. For example, to retrieve the posts with ids <code>[1, 5, 6]</code>, send
+a GET request with the following path and query:</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>/site_translation/12/posts?id[]=1&amp;id[]=5&amp;id[]=6
+</code></pre></div>
 
 
 
