@@ -6,10 +6,11 @@ specified objects in one request, instead of making `n` requests.
 
 This is done by adding a query parameter `id[]={id_value}` for each object you 
 want to retrieve. For example, to retrieve the posts with ids `[1, 5, 6]`, send
-a GET request with the following path and query:
+a GET request shown beside.
 
+> To retrieve posts with ids `[1,5,6]` at once, make the following request:
 ```
-/site_translation/12/posts?id[]=1&id[]=5&id[]=6
+GET {base_url}/site_translation/12/posts?id[]=1&id[]=5&id[]=6
 ```
 
 This functionality is currently active for:
