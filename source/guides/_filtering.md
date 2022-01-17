@@ -11,3 +11,12 @@ a GET request with the following path and query:
 ```
 /site_translation/12/posts?id[]=1&id[]=5&id[]=6
 ```
+
+This functionality is currently active for:
+
+- Site Translations
+- Posts
+- Sections
+- Elements
+- Content Objects
+- Authentication Objects
