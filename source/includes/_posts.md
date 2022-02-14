@@ -55,7 +55,9 @@ Parameter | Description
 --------- | -----------
 :site_translation_id | The id of the site translation to which the posts belong
 :site_id | The id of the site to which the posts belong
-:post_status | Optional. The post_status of the posts to filter One of "published" and "unpublished".
+:post_status | Optional. The post_status of the posts to filter for. One of `[published,unpublished]`
+:slug | Optional. The slug of the posts to filter for
+:title | Optional. The title of the posts to filter for
 
 #### Alternative endpoints
 
