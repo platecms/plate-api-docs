@@ -560,6 +560,52 @@ html, body {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+// ARCHIVE BANNER
+////////////////////////////////////////////////////////////////////////////////
+
+.archive-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  animation: pulse 2s infinite;
+}
+
+.archive-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+// Adjust main content to account for banner
+.page-wrapper {
+  margin-top: 42px; // Add space for the banner
+}
+
+.toc-wrapper {
+  top: 42px; // Move TOC down to account for banner
+  height: calc(100% - 42px); // Adjust height
+}
+
+////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////
 // These are the styles for phones and tablets

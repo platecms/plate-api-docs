@@ -66,6 +66,15 @@ under the License.
   </head>
 
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
+    <!-- Archive Banner -->
+    <div class="archive-banner">
+      <div class="archive-banner-content">
+        🎉 Good news! All plate documents are now available in one place at 
+        <a href="https://docs.platemultisite.com/">https://docs.platemultisite.com/</a>
+        This page will be archived in 2 months.
+      </div>
+    </div>
+    
     <a href="#" id="nav-button">
       <span>
         NAV
